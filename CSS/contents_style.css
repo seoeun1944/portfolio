@@ -1,0 +1,286 @@
+/* contents_style.css */
+
+/** MAIN STYLE ***********/
+#main_img{
+    position: relative;
+    background: url(../images/img_wrap_bg.jpg) no-repeat right 0;
+    padding-bottom: 100px;
+}
+@media screen and (min-width: 1903px){
+#main_img{padding: 240px 0 100px 270px;}
+}
+@media screen and (min-width: 768px) and (max-width: 1902px){
+#main_img{padding: 200px 0 100px 150px;}
+}
+@media screen and (max-width: 767px){
+#main_img{
+    width: 96%;
+    padding: 100px 0 100px 0;
+    margin: 0 auto;
+    background: none;
+}
+}
+    #main_img h1{
+        font-family: 'Noto Sans KR', sans-serif;
+        color: #fff;
+        font-weight: bold;
+    }
+    @media screen and (min-width: 1903px){
+    #main_img h1{font-size: 120px;}
+    }
+    @media screen and (min-width: 768px) and (max-width: 1902px){
+    #main_img h1{font-size: 80px;}
+    }
+    @media screen and (max-width: 767px){
+    #main_img h1{font-size: 40px;}
+    }
+    #img_wrap{
+        overflow: hidden;
+        margin-top: 76px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1366px){
+    #img_wrap{margin-top: 56px;}
+    }
+    @media screen and (max-width: 767px){
+    #img_wrap{margin-top: 20px;}
+    }
+        #img_wrap >img{
+            float: left;
+            margin-right: 23px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1366px){
+        #img_wrap >img{clear: both;}
+        #img_wrap >img:first-child{width: 245px;}
+        #img_wrap >img:last-child{
+            width: 530px;
+            margin-top: 23px;
+        }
+        }
+        @media screen and (max-width: 767px){
+        #img_wrap >img:first-child{width: 80%;}
+        #img_wrap >img:last-child{
+            width: 100%;
+            margin-top: 10px;
+        }
+        }
+    #main_img >h3{
+        position: absolute;
+        right: -10px; top: 583px;
+        font-family: 'Sriracha', cursive;
+        font-size: 40px;
+        color: rgba(255,255,255,0.6);
+        
+        transform: rotateZ(90deg);
+    }
+    @media screen and (min-width: 768px) and (max-width: 1366px){
+    #main_img >h3{
+        left: 500px; top: 633px;
+        font-size: 35px;
+    }
+    }
+    @media screen and (min-width: 415px) and (max-width: 767px){
+    #main_img >h3{
+        left: 500px; top: 633px;
+        font-size: 24px;
+    }
+    }
+    @media screen and (max-width: 414px){
+    #main_img >h3{
+        right: -80px; top: 260px;
+        font-size: 18px;
+        color: rgba(255,255,255,1);
+    }
+    }
+
+
+/** MEDIAQUERY STYLE ***********/
+#mediaquery{
+    padding-top: 80px;
+    overflow: hidden;
+    
+    position: relative;
+}
+@media screen and (min-width: 768px) and (max-width: 1366px){
+#mediaquery{
+    width: 740px;
+    margin: 0 auto;
+    }
+}
+    #mediaquery >div{
+        float: left;
+    }
+    @media screen and (max-width: 1366px){
+    #mediaquery >div{clear: both;}
+    }
+    #mq_bg{
+        margin: 260px 0 50px 100px;
+        width: 940px; height: 550px;
+        background: url(../images/mediaquery_bg.png) no-repeat right bottom;
+        position: relative;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1366px){
+    #mq_bg{
+        margin: 160px 0 50px 0px;
+        width: 740px; height: 420px;
+        background: url(../images/mediaquery_t_bg.png) no-repeat right bottom;
+        margin: 100px auto;
+    }
+        #mq_bg >img{width: 650px;}
+    }
+    @media screen and (max-width: 767px){
+    #mq_bg{
+        margin: 100px 2% 50px;
+        width: 96%; height: auto;
+        background: url(../images/mediaquery_t_bg.png) no-repeat;
+    }
+        #mq_bg >img{width: 94%; margin: 10px auto;}
+    }
+
+        #mq_bg >h3{
+            font-family: 'Sriracha', cursive;
+            font-weight: bold;
+            font-size: 40px;
+            color: rgba(0,0,0,0.5);
+            
+            transform: rotateZ(90deg);
+            position: absolute;
+            right: -80px; top: 250px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1366px){
+        #mq_bg >h3{
+            font-size: 25px;
+            right: 30px; top: 180px;
+        }
+        }
+        @media screen and (min-width: 415px) and (max-width: 767px){
+        #mq_bg >h3{
+            font-size: 20px;
+            right: -43px; top: 100px;
+        } 
+        }
+        @media screen and (max-width: 414px){
+        #mq_bg >h3{
+            font-size: 16px;
+            right: -38px; top: 76px;
+        }
+        }
+        #mq_bg >div{
+            display: inline-block;
+            position: absolute;
+            left: 130px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1366px){
+        #mq_bg >div{left: 80px;}
+        }
+        @media screen and (max-width: 767px){
+        #mq_bg >div{left: 30%;}
+        }
+            #mq_bg >div >h4{
+                font-family: 'Sriracha', cursive;
+                font-weight: bold;
+                font-size: 20px;
+                color: rgba(0,0,0,0.5);
+                height: 25px;
+            }
+            @media screen and (max-width: 767px){
+            #mq_bg >div >h4{font-size: 16px;}
+            }
+
+#info{
+    width: 740px; height: 512px;
+    padding-top: 300px;
+    background: #c6b3a4;
+}
+@media screen and (min-width: 1367px){
+#info{margin-left: 23px;}
+}
+@media screen and (min-width: 768px) and (max-width: 1366px){
+#info{margin: 100px auto;}
+}
+@media screen and (max-width: 767px){
+#info{
+    width: 96%; height: auto;
+    padding: 50px 0;
+    margin: 50px 2% 0;
+}
+}
+    /** 중복 **/
+    #info >ul{
+        border-left: 2px solid #000;
+        margin-left: 82px;
+        float: left;
+    }
+    @media screen and (max-width: 767px){
+    #info >ul{
+        width: 100%;
+        margin-left: 30px;
+    }
+    }
+        #info >ul >li{
+            padding-left: 42px;
+            margin-bottom: 8px;
+        }
+            #info h3{
+                font-weight: 700;
+                font-size: 19px;
+                letter-spacing: 0.5px;
+                line-height: 30px;
+            }
+            @media screen and (max-width: 767px){
+            #info h3{
+                font-size: 16px;
+                line-height: 30px;
+            }
+            }
+            #info h4{
+                font-size: 16px;
+            }
+            @media screen and (max-width: 767px){
+            #info h4{
+                width: 80%;
+                font-size: 14px;
+            }
+            }
+    /** //중복 **/
+
+    #type{margin-top: 22px;}
+    #style_guide{
+    }
+            #style_guide >li:first-child img{
+                margin-bottom: 20px;
+            }
+    #concept{margin-top: 32px;}
+
+    #go_site{
+        display: inline-block;
+        width: 200px; height: 75px;
+        
+        position: absolute;
+        left: 340px; top: 150px;
+        
+        z-index: 999;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1366px){
+    #go_site{left: 140px; top: 100px;}
+    }
+    @media screen and (max-width: 767px){
+    #go_site{left: 140px; top: 50px;}
+    }
+            #go_site >a >img{
+                animation: rotation 8s linear 0s infinite alternate;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

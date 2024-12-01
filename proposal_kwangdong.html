@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>proposal_kwangdong</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="CSS/common.css" />
+    <link rel="stylesheet" href="CSS/master.css" />
+    
+    <link rel="stylesheet" href="js/aos.css" />
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="menu">
+        <h1 id="hd1"><a href="index.html" >Home</a></h1>
+    </div>
+    
+    <div id="shadow">
+        <img src="images/shadow.png" alt="그림자 이미지" />
+    </div>
+
+    <div id="lines">
+        <div id="line_w"></div>
+        <div id="line_h" style="width: 50%"></div>
+        <div id="line_r"></div>
+    </div>
+    <script>
+        setTimeout(function(){
+            $("#line_r").addClass("active");
+        },500);
+    </script>
+    
+    <div id="number" style="z-index: 50;">
+        <span id="n1"><img src="images/n1.png" alt="01" /></span>
+        <span id="n2"><img src="images/n2.png" alt="02" /></span>
+        <span id="n3"><img src="images/n3.png" alt="03" /></span>
+        <span id="n4"><img src="images/n4.png" alt="04" /></span>
+    </div>
+</header>
+
+<section id="main_img">
+    <div class="transcroller-body aos-all">
+        <div class="aos-item" data-aos="fade-left" data-aos-offset="500" data-aos-easing="ease-in-sine">
+            <div class="aos-item__inner"><h1>kwangdong</h1></div>
+        </div>
+    </div>
+    <div id="img_wrap">
+        <img src="images/kwangdong_img1.jpg" alt="마녀공장 제품이미지" />
+        <img src="images/kwangdong_img2.jpg" alt="마녀공장 모델이미지" />
+    </div>
+    <h3>Responsive Website Renewal</h3>
+</section>
+<script src="js/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+</script>
+
+<section id="mediaquery">
+    <div id="mq_bg">
+        <img src="images/kwangdong_mediaquery.png" alt="pc mobile 사이즈 이미지" />
+        <h3>MEDIAQUERY</h3>
+        <div>
+            <h4>PC : 1903px - 1025px</h4>
+            <h4>Tablet : 1024px - 415px</h4>
+            <h4>Mobile : max 414px</h4>
+        </div>
+    </div>
+    
+    <div id="info">
+        <ul id="type">
+            <li>
+                <h3>WORK</h3>
+                <h4>UI/UX 디자인, 퍼블리싱</h4>
+            </li>
+            <li>
+                <h3>WORK TIME</h3>
+                <h4>2020.02.17 - 2020.02.23</h4>
+            </li>
+            <li>
+                <h3>TYPE</h3>
+                <h4>반응형웹</h4>
+            </li>
+        </ul>
+        
+        <ul id="style_guide">
+            <li>
+                <h3>STYLE GUIDE</h3>
+                <h4>Typography</h4>
+                <img src="images/kwangdong_typography.png" alt="나눔고딕, Noto Sans, copperlateplate gothic" />
+            </li>
+            <li>
+                <h4>Color</h4>
+                <img src="images/kwangdong_color.png" alt="#7f7f7f, #822c40" />
+            </li>
+        </ul>
+        
+        <ul id="concept">
+            <li>
+                <h3>CONCEPT</h3>
+                <h4>
+                    일반의약품이 많아 사람들에게 좀 더 친숙한 이미지를<br />
+                    주고자 기존의 다른 제약회사들의 느낌보다는<br />
+                    친근하고 제품을 보기 더 편리하게 작업하였습니다.<br />
+                    또한 기업의 지향하는 바와 핵심 역량을 메인에 넣어<br />
+                    좀 더 기업의식이 돋보이게 작업하였습니다.
+                </h4>
+            </li>
+        </ul>
+    </div>
+    
+    <nav id="go_site">
+        <a target="_blank" href="kwangdong/index.html"><img src="images/resume.png" alt="별모양도형" /></a>
+        <span id="click">click click</span>
+        <span id="click_t">going to site</span>
+    </nav>
+    
+</section>
+
+</body>
+</html>

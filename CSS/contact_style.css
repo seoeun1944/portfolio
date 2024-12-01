@@ -1,0 +1,145 @@
+/* contact_style.css */
+#contact{
+    padding-top: 160px;
+    padding-bottom: 100px;
+    position: relative;
+}
+@media screen and (max-width: 767px){
+#contact{padding-top: 50px;}
+}
+    #letter{
+        position: relative;
+        height: 750px;
+        padding-bottom: 50px;
+    }
+    @media screen and (max-width: 767px){
+    #letter{height: 640px;}
+    }
+        #letter >img{
+            position: absolute;
+            left: 216px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1366px){
+        #letter >img{left: 50px;}
+        }
+        @media screen and (max-width: 767px){
+        #letter >img{left: 10px;}
+        }
+        #letter >img#letter_t{
+            top: 176px;
+            z-index: 10;
+        }
+        #letter >img#letter_b{top: 145px;}
+        @media screen and (max-width: 767px){
+        #letter >img#letter_t{
+            width: 200px;
+            top: 166px;
+        }
+        #letter >img#letter_b{
+            width: 280px;
+            top: 145px;
+        }
+        }
+        #letter h4{
+            position: absolute;
+            left: 340px; top: 60px;
+            width: 1049px; height: 582px;
+            background: url(../images/paper.png)no-repeat;
+            padding: 103px 65px;
+            box-sizing: border-box;
+            
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 18px;
+            letter-spacing: 1px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1366px){
+        #letter h4{
+            left: 100px; top: 60px;
+            width: 500px;
+            background: url(../images/paper_t.png)no-repeat;
+            padding: 103px 65px;
+            
+            font-size: 18px;
+        }
+        }
+        @media screen and (max-width: 767px){
+        #letter h4{
+            left: 30px; top: 60px;
+            width: 270px; height: 400px;
+            background: url(../images/paper_m.png)no-repeat;
+            padding: 53px 25px;
+            
+            font-size: 18px;
+        }
+        }
+
+    #memo{
+        /* position: absolute;
+        right: 760px; bottom: 50px; */
+        margin-left: 216px;
+        
+        width: 384px; height: 418px;
+        background: url(../images/meno_bg.png)no-repeat;
+        padding: 160px 0 0 80px;
+        box-sizing: border-box;
+        
+        z-index: 50;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1366px){
+    #memo{
+        /* right: 100px; bottom: 50px; */
+        padding: 160px 0 0 80px;
+    }
+    }
+    @media screen and (max-width: 767px){
+    #memo{
+        /* right: 10px; bottom: 300px; */ 
+        margin: 0 auto;
+
+        width: 232px; height: 252px;
+        background: url(../images/meno_bg_m.png)no-repeat;
+        padding: 80px 0 0 40px;
+    }
+    }
+        #memo >h3{
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 20px;
+            letter-spacing: 2px;
+            font-weight: bold;
+            transform: rotateZ(-3deg);
+        }
+        #memo >h4{
+            font-family: 'Shadows Into Light Two', cursive;
+            font-size: 20px;
+            letter-spacing: 1px;
+            transform: rotateZ(-3deg);
+            
+            margin-top: 70px;
+        }
+        @media screen and (max-width: 767px){
+        #memo >h3{font-size: 16px;}
+        #memo >h4{
+            font-size: 16px;
+            margin-top: 30px;
+        }
+        }
+
+    .contact_me{
+        position: absolute;
+        right: 70px; bottom: 446px;
+        z-index: 50;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1366px){
+        .contact_me img{width: 600px;}
+    }
+    @media screen and (min-width: 415px) and (max-width: 767px){
+    .contact_me{bottom: 486px;}
+        .contact_me img{width: 500px;}
+    }
+    @media screen and (max-width: 767px){
+    .contact_me{display: none;}
+    }
+
+
+
+

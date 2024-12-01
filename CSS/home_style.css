@@ -1,0 +1,127 @@
+/* home_style.css */
+#home{
+    position: relative;
+    padding-bottom: 100px;
+}
+    #h_img{
+        width: 765px;
+        padding-top: 133px; padding-left: 216px;
+        overflow: hidden;
+        display: flex;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1366px){
+    #h_img{
+        width: 550px;
+        padding-top: 35%; padding-left: 20%;
+    }
+    }
+    @media screen and (max-width: 767px){
+    #h_img{
+        width: 260px;
+        padding-left: 0;
+        padding-top: 110px;
+        margin: 0 auto;
+    }
+    }
+        #h_img div{
+            width: 225px;
+            height: 770px;
+            overflow: hidden;
+            margin-right: 23px;
+            display: flex;
+            justify-content: center;
+        }
+            #h_img img{
+                margin: 0 auto;
+                height: 100%;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1366px){
+            #h_img div{width: 150px; height: 502px;}
+            #h_img div:first-child{}
+            #h_img div:nth-child(2){margin-top: 60px;}
+            #h_img div:last-child{margin-top: 120px;}
+            #h_img img{}
+            }
+            @media screen and (max-width: 767px){
+            #h_img div{width: 80px; height: 267px; margin-right: 10px;}
+            #h_img div:first-child{}
+            #h_img div:nth-child(2){margin-top: 60px;}
+            #h_img div:last-child{
+                margin-top: 120px;
+                margin-right: 0;
+            }
+            #h_img img{}
+            }
+
+    #home >h1{
+        position: absolute;
+        right: 134px; bottom: 448px;
+        
+        width: 0; height: 88px;
+        overflow: hidden; 
+        transition-duration: 1s;
+    }
+    #home >h1.active{width: 736px;}
+    @media screen and (min-width: 768px) and (max-width: 1366px){
+    #home >h1{right: 20px; bottom: 200px;}
+        #home >h1 >img{width: 700px;}
+    }
+    @media screen and (max-width: 767px){
+    #home >h1{right: 0; bottom: 200px;}
+    #home >h1.active{width: 100%;}
+        #home >h1 >img{
+            width: 500px;
+            margin: 0 auto;
+        }
+    }
+    @media screen and (max-width: 767px){
+        #home >h1 >img{width: 300px;}
+    }
+    
+    #resume{
+        display: inline-block;
+        width: 200px; height: 75px;
+        
+        position: absolute;
+        right: 350px; bottom: 160px;
+    }
+    @media screen and (min-width: 1205px) and (max-width: 1366px){
+    #resume{right: 10%; bottom: 50px;}
+    }
+    @media screen and (min-width: 415px) and (max-width: 1204px){
+    #resume{left: 100px; bottom: 50px;}
+    }
+    @media screen and (max-width: 414px){
+    #resume{left: 5%; bottom: 30px;}
+    }
+
+        #resume >a >img{
+            animation: rotation 8s linear 0s infinite alternate;
+        }
+        @keyframes rotation{
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+        span#click{
+            color: #f93700;
+            
+            position: absolute;
+            left: 45px; top: -30px;
+            transform: rotateZ(-25deg);
+        }
+        span#click_t{
+            font-family: 'Work Sans', sans-serif;
+            font-size: 20px;
+            
+            position: absolute;
+            left: 10px; bottom: 0;
+        }
+
+
+
+
+
+
+
+
+

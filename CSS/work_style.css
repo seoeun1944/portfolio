@@ -1,0 +1,138 @@
+/* work_style.css */
+@media screen and (min-width: 1367px){
+    #work{display: block;}
+    #work_tm{display: none;}
+}
+@media screen and (max-width: 1366px){
+    /* menu 클릭시 work로 링크 걸려있기 때문에 */
+    #work{height: 0;}
+    #work >article{display: none;}
+    #work_tm{display: block;}
+}
+
+/** IMAGES **/
+#work >article:nth-of-type(1) >.thumb{background-image: url(../images/manyo.jpg);}
+#work >article:nth-of-type(2) >.thumb{background-image: url(../images/thealley.jpg);}
+#work >article:nth-of-type(3) >.thumb{background-image: url(../images/smeg.jpg);}
+#work >article:nth-of-type(4) >.thumb{background-image: url(../images/kwangdong.jpg);}
+#work >article:nth-of-type(5) >.thumb{background-image: url(../images/working_on_w.jpg);}
+#work >article:nth-of-type(6) >.thumb{background-image: url(../images/working_on_w.jpg);}
+
+/** //IMAGES **/
+
+#work{
+    padding-left: 216px;
+    padding-top: 130px;
+    overflow: hidden;
+}
+@media screen and (max-width: 1366px){
+#work{padding-top: 0;}
+}
+#work_tm{
+    padding-left: 0;
+    padding-top: 160px;
+    overflow: hidden;
+    width: 760px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 767px){
+#work_tm{
+    padding-top: 80px;
+    width: 310px;
+    }
+}
+    #work >article{
+        position: relative;
+        float: left;
+        margin: 0 5px;
+        margin-top: 10px;
+        
+        width: 230px; height: 770px;
+    }
+    #work_tm >article{
+        position: relative;
+        float: left;
+        margin: 0 5px;
+        margin-top: 10px;
+        
+        width: 365px; height: 365px;
+    }
+    @media screen and (max-width: 767px){
+    #work_tm >article{width: 300px; height: 300px;}
+    }
+    #work >article:hover{
+        width: 400px;
+    } 
+        .thumb,
+        .description{
+            position: absolute;
+        }
+        .thumb{
+            width: 230px; height: 770px;
+            left: 0;
+            background-position: 50% 0;
+            background-repeat: no-repeat;
+        }
+        #work >article:hover >.thumb{
+            width: 400px;
+            background-position: 0 0;
+            transition-duration: 0.8s;
+        }
+        #work_tm >article.active >.thumb{
+            width: 400px;
+            background-position: 0 0;
+            transition-duration: 0.8s;
+        }
+        @media screen and (max-width: 767px){
+        #work >article >.thumb{width: 300px;}
+            #work_tm >article >.thumb >img{width: 300px;}
+        }
+
+        .description{
+            width: 283px; height: 247px;
+            left: -17px; top: -8px;
+            background: url(../images/w_bg.png)no-repeat;
+            
+            display: none;
+        }
+        #work >article:hover >.description{
+            display: block;
+        } 
+        #work_tm >article.active >.description{
+            display: block;
+        }
+        .description >a{
+            padding-top: 52px;
+            padding-left: 80px;
+        }
+            .description >a >h3{
+                color: #464646;
+                font-weight: 700;
+            }
+            .description >a >h4{
+                color: #545454;
+                font-size: 14px;
+                line-height: 20px;
+                padding-top: 15px;
+            }
+            .description >a >span{
+                display: block;
+                width: 0; height: 36px;
+                text-indent: -6000px; overflow: hidden;
+                background: url(../images/more.png) no-repeat;
+                margin-top: 30px;
+                
+                animation: more 1s linear 0s infinite normal;
+            }
+            @keyframes more{
+                from{width: 0;}
+                50%{width: 140px;;}
+                to{width: 150px;}
+            }
+
+
+
+
+
+
+

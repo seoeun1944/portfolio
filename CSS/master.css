@@ -1,0 +1,16 @@
+/* master.css */
+
+@import url(header_style.css);
+@import url(home_style.css);
+@import url(aboutme_style.css);
+@import url(work_style.css);
+@import url(contact_style.css);
+
+/* proposal page */
+@import url(contents_style.css);
+
+
+body{
+    background: #dbd5c9;
+}
+

@@ -1,0 +1,128 @@
+/* aboutme_style.css */
+    #about_me{
+        padding: 215px 0;
+        position: relative;
+    }
+    @media screen and (max-width: 767px){
+    #about_me{padding: 65px 0 0 0;}
+    }
+        #am_bg{
+            width: 1227px; height: 599px;
+            background: url(../images/am_bg.png) no-repeat;
+            margin-left: 186px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1366px){
+        #am_bg{
+            width: 600px;
+            background: url(../images/am_bg_t.png) no-repeat;
+            margin: 0 auto;
+        }
+        }
+        @media screen and (max-width: 767px){
+        #am_bg{
+            width: 320px;
+            background: url(../images/am_bg_m.png) no-repeat;
+            margin: 0 auto;
+        }
+        }
+            #am_bg >div{
+                float: left;
+                margin-top: 100px;
+            }
+            @media screen and (max-width: 767px){
+            #am_bg >div{margin-top: 50px;}
+            }
+            #am_t{
+                width: 125px;
+                border-right: 2px solid #494646;
+                margin-left: 148px;
+            }
+            @media screen and (max-width: 767px){
+            #am_t{
+                width: 70px;
+                margin-left: 78px;
+            }
+            }
+                #am_t >h3{
+                    font-family: 'Work Sans', sans-serif;
+                    line-height: 40px;
+                }
+                @media screen and (max-width: 767px){
+                #am_t >h3{font-size: 16px;}
+                }
+            #am_c{margin-left: 50px;}
+            @media screen and (max-width: 767px){
+            #am_c{margin-left: 10px;}
+            }
+                #am_c >h4{
+                    line-height: 40px;
+                    font-size: 16px;
+                }
+                @media screen and (max-width: 767px){
+                #am_c >h4{font-size: 14px;}
+                }
+                #skills{
+                    height: 280px;
+                    margin-top: 5px;
+                }
+                @media screen and (min-width: 1367px){
+                #skills{width: 0;}
+                #am_bg:hover #skills{
+                    width: 540px;
+                    animation: graph 0.5s linear 0s 1 normal;
+                }
+                }
+                @media screen and (min-width: 768px) and (max-width: 1366px){
+                #skills{width: 250px;}
+                }
+                @media screen and (max-width: 767px){
+                #skills{width: 150px;}
+                }
+                @keyframes graph{
+                    from{width: 0;}
+                    to{width: 540px;}
+                }
+                    #skills >span{
+                        font-size: 14px;
+                        font-family: 'Work Sans', sans-serif;
+                    }
+                        #skills >span >div{
+                            height: 10px;
+                            background: #9d8e82;
+                        }
+                        .photo{width: 90%;}
+                        .illu{width: 70%;}
+                        .html{width: 80%;}
+                        .css{width: 80%;}
+                        .js{width: 50%;}
+                        .j_qurey{width: 50%;}
+  
+        .kimseoeun {
+            position: absolute;
+            right: 280px; top: 370px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1366px){
+        .kimseoeun {
+            position: absolute;
+            left: 30px; top: 570px;
+        }
+        }
+        @media screen and (max-width: 767px){
+        .kimseoeun {display: none;}
+        }
+            .kimseoeun >.aos-item {
+              display: inline-block;
+            }
+                .kimseoeun >.aos-item >.aos-item__inner {
+                }
+                @media screen and (max-width: 800px) {
+                  .kimseoeun >.aos-item {
+                    width: 50%;
+                  }
+                }
+
+
+
+
+
+

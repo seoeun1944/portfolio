@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>portfolio_kimseoeun</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="CSS/common.css" />
+    <link rel="stylesheet" href="CSS/master.css" />
+    
+    <link rel="stylesheet" href="js/aos.css" />
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div id="menu">
+        <!-- <h1 id="hd1" class="active"><a href="index.html" >Home</a></h1>
+        <h1 id="hd2"><a href="#about_me" >About me</a></h1>
+        <h1 id="hd3"><a href="#work">Work</a></h1>
+        <h1 id="hd4"><a href="#contact" >Contact</a></h1> -->
+        <h1 id="hd1" class="active"><a href="index.html" >Portfolio</a></h1>
+    </div>
+    <script>
+    $(function(){
+        setInterval(function(){
+            // console.log($("#about_me").offset().top);
+            
+            // $("#menu >#hd1").addClass("active");
+            // if($(window).scrollTop()>=0){
+            //     $("#menu >h1").removeClass("active");
+            //     $("#menu >#hd1").addClass("active");
+            // }
+            
+            // if($(window).scrollTop()>=$("#about_me").offset().top){;
+            //     $("#menu >h1").removeClass("active");
+            //     $("#menu >#hd2").addClass("active");
+            // }
+            
+            // if($(window).scrollTop()>=$("#work").offset().top){
+            //     $("#menu >h1").removeClass("active");
+            //     $("#menu >#hd3").addClass("active");
+            // }
+            
+            // if($(window).scrollTop()>=$("#contact").offset().top){
+            //     $("#menu >h1").removeClass("active");
+            //     $("#menu >#hd4").addClass("active");
+            // }
+        },50);
+    });
+    </script>
+    
+    <!-- <div id="leaves">
+        <img id="leaf1" src="images/leaf_img01.png" alt="잎 이미지" />
+        <img id="leaf2" src="images/leaf_img02.png" alt="잎 이미지" />
+        <img id="leaf3" src="images/leaf_img03.png" alt="잎 이미지" />
+        <img id="leaf4" src="images/leaf_img04.png" alt="잎 이미지" />
+        <img id="leaf5" src="images/leaf_img05.png" alt="잎 이미지" />
+        <img id="leaf6" src="images/leaf_img06.png" alt="잎 이미지" />
+        <img id="leaf7" src="images/leaf_img07.png" alt="잎 이미지" />
+    </div>
+    <div id="leaves_m">
+        <img id="leaf1_m" src="images/leaf_img01_m.png" alt="잎 이미지" />
+        <img id="leaf2_m" src="images/leaf_img02_m.png" alt="잎 이미지" />
+        <img id="leaf4_m" src="images/leaf_img04_m.png" alt="잎 이미지" />
+        <img id="leaf6_m" src="images/leaf_img06_m.png" alt="잎 이미지" />
+    </div> -->
+
+    <div id="lines">
+        <div id="line_w"></div>
+        <div id="line_h"></div>
+        <div id="line_r"></div>
+    </div>
+    <script>
+        setTimeout(function(){
+            $("#line_r").addClass("active");
+        },500);
+    </script>
+    
+    <div id="number">
+        <span id="n1"><img src="images/n1.png" alt="01" /></span>
+        <span id="n2"><img src="images/n2.png" alt="02" /></span>
+        <span id="n3"><img src="images/n3.png" alt="03" /></span>
+        <span id="n4"><img src="images/n4.png" alt="04" /></span>
+    </div>
+</header>
+
+<!-- <section id="home">
+    <div id="h_img">
+        <%-- <img src="images/home_img01.jpg" alt="" />
+        <img src="images/home_img02.jpg" alt="" />
+        <img src="images/home_img03.jpg" alt="" /> -%->
+        <div><img src="images/manyo_img1.jpg" alt="마녀공장 제품이미지" /></div>
+        <div><img src="images/smeg_img1.jpg" alt="스메그 제품이미지" /></div>
+        <div><img src="images/thealley_img1.jpg" alt="더엘리 제품이미지" /></div>
+    </div>
+    
+    <h1><img src="images/portfolio.png" alt="portfolio" /></h1>
+    
+    <div id="resume">
+        <a href="#">
+            <img src="images/resume.png" alt="별모양도형" />
+        </a>
+        <span id="click">click click</span>
+        <span id="click_t">resume download</span>
+    </div>
+</section>
+<script>
+    setTimeout(function(){
+        $("#home >h1").addClass("active");
+    },500);
+</script>
+ -->
+
+<!-- <section id="about_me">
+    <div id="am_bg">
+        <div id="am_t">
+            <h3>NAME</h3>
+            <h3>BIRTH</h3>
+            <h3>MOBILE</h3>
+            <h3>E&#45;MAIL</h3>
+            <h3>SKILLS</h3>
+        </div>
+        <div id="am_c">
+            <h4>김서은</h4>
+            <h4>1996.12.06</h4>
+            <h4>010.9467.1944</h4>
+            <h4>fjrzl1345@naver.com</h4>
+            <div id="skills">
+               <span>photoshop<div class="photo"></div></span>
+               <span>illustrator<div class="illu"></div></span>
+               <span>html5<div class="html"></div></span>
+               <span>css3<div class="css"></div></span>
+               <span>javascript<div class="js"></div></span>
+               <span>jqurey<div class="j_qurey"></div></span>
+            </div>
+        </div>
+    </div>
+    
+    <div class="transcroller-body aos-all kimseoeun">
+        <div class="aos-item" data-aos="flip-right">
+            <div class="aos-item__inner"><h3><img src="images/kimseoeun.png" alt="김서은" /></h3></div>
+        </div>
+    </div>
+</section> -->
+<script src="js/aos.js"></script>
+<script>
+  AOS.init({
+    easing: 'ease-in-out-sine'
+  });
+</script>
+
+<section id="work">
+    <article class="m_active">
+        <div class="thumb"></div>
+        <div class="description">
+            <a href="proposal_manyo.html">
+                <h3>마녀공장</h3>
+                <h4>자연주의 기능성<br /> 화장품 브랜드 마녀공장</h4>
+                <span>바로가기</span>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="thumb"></div>
+        <div class="description">
+            <a href="proposal_thealley.html">
+                <h3>더 앨리</h3>
+                <h4>글로벌 티 음료 브랜드 더 앨리</h4>
+                <span>바로가기</span>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="thumb"></div>
+        <div class="description">
+            <a href="proposal_smeg.html">
+                <h3>스메그</h3>
+                <h4>미, 인체 공학, 기능성에 초점을<br />
+                둔 가전제품 브랜드 스메그</h4>
+                <span>바로가기</span>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="thumb"></div>
+        <div class="description">
+            <a href="proposal_kwangdong.html">
+                <h3>광동제약</h3>
+                <h4>휴먼 헬스케어 브랜드 기업<br />
+                광동제약</h4>
+                <span>바로가기</span>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="thumb"></div>
+    </article>
+    <article>
+        <div class="thumb"></div>
+    </article>
+
+</section>
+
+<section id="work_tm">
+    <article class="m_active">
+        <div class="thumb"><img src="images/manyo_tm.jpg" alt="마녀공장브랜드 이미지" /></div>
+        <div class="description">
+            <a href="proposal_manyo.html">
+                <h3>마녀공장</h3>
+                <h4>자연주의 기능성<br /> 화장품 브랜드 마녀공장</h4>
+                <span>바로가기</span>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="thumb"><img src="images/thealley_tm.jpg" alt="더앨리브랜드 이미지" /></div>
+        <div class="description">
+            <a href="proposal_thealley.html">
+                <h3>더 앨리</h3>
+                <h4>글로벌 티 음료 브랜드 더 앨리</h4>
+                <span>바로가기</span>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="thumb"><img src="images/smeg_tm.jpg" alt="스메그브랜드 이미지" /></div>
+        <div class="description">
+            <a href="proposal_smeg.html">
+                <h3>스메그</h3>
+                <h4>미, 인체 공학, 기능성에 초점을<br />
+                둔 가전제품 브랜드 스메그</h4>
+                <span>바로가기</span>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="thumb"><img src="images/kwangdong_tm.jpg" alt="광동제약브랜드 이미지" /></div>
+        <div class="description">
+            <a href="proposal_kwangdong.html">
+                <h3>광동제약</h3>
+                <h4>휴먼 헬스케어 브랜드 기업<br />
+                광동제약</h4>
+                <span>바로가기</span>
+            </a>
+        </div>
+    </article>
+    <article>
+        <div class="thumb"><img src="images/working_on_tm.jpg" alt="작업중" /></div>
+    </article>
+    <article>
+        <div class="thumb"><img src="images/working_on_tm.jpg" alt="작업중" /></div>
+    </article>
+</section>
+<script>
+    $(function(){
+            $("#work_tm >article.m_active").addClass("active");
+        $("#work_tm >article").click(function(){
+            $("#work_tm >article").removeClass("active");
+            $(this).addClass("active");
+        });
+    },500);
+</script>
+
+<section id="contact">
+    <!-- <div id="letter">
+        <img id="letter_t" src="images/letter_t.png" alt="편지봉투이미지" />
+        <img id="letter_b" src="images/letter_b.png" alt="편지봉투이미지" />
+        
+        <div class="transcroller-body aos-all">
+            <div class="aos-item" data-aos="fade-up">
+                <div class="aos-item__inner">
+                    <h4>
+                        Dear. fjrzl1345@naver.com<br />
+                        from.
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div id="memo">
+        <h3>
+            KIM SEOEUN<br />
+            010.9467.1944<br />
+            /fjrzl1345@naver.com
+        </h3>
+        <!-- <h4>Thanks you for watching</h4> -->
+        <h4>contact me.</h4>
+    </div>
+
+    <div id="resume">
+        <a href="#">
+            <img src="images/resume.png" alt="별모양도형" />
+        </a>
+        <span id="click">click click</span>
+        <span id="click_t">resume download</span>
+    </div>
+    
+    <!-- <div class="transcroller-body aos-all contact_me">
+        <div class="aos-item" data-aos="flip-right">
+            <div class="aos-item__inner"><h3><img src="images/contact_me.png" alt="contant me" /></h3></div>
+        </div>
+    </div> -->
+</section>
+
+</body>
+</html>
