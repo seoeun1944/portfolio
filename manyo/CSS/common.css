@@ -32,6 +32,7 @@
 		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff) format('woff'),
 		url(https://fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf) format('truetype');
 }
+
 /** RESETS ****************************************************/
 *{margin: 0; padding: 0;}
 html, body{
@@ -81,10 +82,8 @@ a{
     color: #000;
 }
 
-/** STYLE ****************/
-input{
-    display: none;
-}
+
+/** CLASS STYLE ****************************************************/
 .skip, .blind{
     display: block;
     height: 0;
@@ -92,5 +91,14 @@ input{
     
     position: absolute;
     top: -6000px;
-    /*완벽하게 없애기 위해*/
-}
+}/*클래스가 다양한 속성에 적용될 수 있어서 두개의 방법으로 지움*/
+
+
+
+
+
+
+
+
+
+

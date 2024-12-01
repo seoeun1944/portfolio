@@ -1,0 +1,76 @@
+/* footer_style.css */
+footer{
+    background: url(../images/bg_footer.jpg) repeat-x;
+    margin-top: 40px;
+}
+    footer >div{
+        width: 1032px; height: 258px;
+        margin: 0 auto;
+        padding-top: 77px; 
+}
+        #f_logo{
+            float: left;
+        }
+        #f_corp{
+            width: 932px; height: 200px;
+            float: right;
+            overflow: hidden;
+        }
+            #left{
+                width: 665px;
+                float: left;
+                position: relative;
+            }
+            
+            #f_policy{
+                position: absolute;
+                left: 0; top: 0;
+            }
+                #f_policy >li{
+                    margin-right: 18px;
+                    float: left;
+                }
+
+            #f_manyo{
+                width: 665px;
+                position: absolute;
+                left: 0; top: 33px;
+            }
+                    #f_manyo a{
+                        display: inline;
+                    }
+                    #f_manyo >h3{
+                        font-size: 14px;
+                        font-weight: 700;
+                    }
+                #f_manyo >adress{
+                    width: 665px;
+                    position: absolute;
+                    left: 0; top: 25px;
+                }
+            #service{
+                float: right;
+                width: 238px;
+            }
+                #service >h3{
+                    margin-bottom: 25px;
+                }
+
+
+/** TEXT STYLE *******************/
+#f_manyo span{
+    height: 21px;
+    line-height: 21px;
+    color: #9d9c9d;
+}
+#service span{
+    height: 19px;
+    line-height: 19px;
+    color: #9d9c9d;
+}
+#f_manyo >adress >span >a{
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+

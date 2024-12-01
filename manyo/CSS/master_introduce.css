@@ -1,9 +1,8 @@
-/* master.css */
+/* master_introduce.css */
 
 @import url(common.css);
 @import url(header_style.css);
-@import url(banner_slider.css);
-@import url(section_style.css);
+@import url(contents_style.css);
 @import url(footer_style.css);
 
 body{
@@ -23,3 +22,17 @@ body{
     top: 450px; right: 0;
     z-index: 10;
 }
+
+
+/** VIDEO STYLE **********************/
+#video{
+    height: 946px;
+    position: relative;
+}
+    #video > iframe {
+        position: absolute;
+        top: 178px; left: 354px;
+    }
+
+
+

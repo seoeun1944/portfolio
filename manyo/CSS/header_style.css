@@ -1,0 +1,92 @@
+/* header_style.css */
+
+#main_header{
+    position: fixed;
+    left: 0; top: 32px;
+    width: 100%; height: 100px;
+    padding-left: 385px;
+    background: rgba(255,255,255,0.8);
+    z-index: 10;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+#main_header.over{
+    height: 460px;    
+}
+    #logo{
+        float: left;
+        margin-top: 32px;
+        margin-right: 35px;
+    }
+
+    #main_nav{
+        height: 100px;
+        float: left;
+        margin-top: 46px;
+    }
+        #main_nav >ul{
+            overflow: hidden;
+            
+        }
+            #main_nav >ul >li{
+                float: left;
+                margin-left: 26px;
+                
+            }
+                #main_nav >ul >li > .sub_menu{
+                    text-align: center;
+                    padding-top: 65px;
+                    
+                }
+                    #main_nav >ul >li > .sub_menu > li{
+                        line-height: 40px;    
+                    }
+    #sub_nav{
+        margin-top: 32px;
+        float: left;
+    }
+        #sub_nav >ul{
+            padding-left: 70px;
+}
+            #sub_nav >ul >li{
+                float: left;
+                margin-left: 28px;
+            }
+
+            .sub_menu >li{
+                text-align: center;
+            }
+            .sub_menu >li:hover{
+                border-bottom: 2px solid #000;
+                font-weight: 900;
+            }
+            .main_menu li:first-child{
+                border-bottom: 2px solid red;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

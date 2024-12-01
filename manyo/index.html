@@ -1,116 +1,297 @@
-<html><head>
-    <title>ma:nyo</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>마녀공장</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes">
-    
-    <link rel="stylesheet" href="CSS/master_index.css">
-    <link rel="stylesheet" href="CSS/common.css">
-    
+    <link rel="stylesheet" href="CSS/master.css" />
     <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/acodian_menu2.js"></script>
+    <script src="js/banner_slider.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap" rel="stylesheet">
 </head>
 <body>
-<input id="toggle" type="checkbox">
-<div id="wrap">
-    <header id="main_header">
-        <h1 id="logo"><a href="main_page.html">man:yo</a></h1>
-        <label class="toggle" for="toggle"></label>
-    </header> 
-    <nav id="main_nav_wrap">
-        <div>
-            <header id="nav_header">
-                <h1 id="nav_logo"><a href="main_page.html">man:yo</a></h1>
-                <label class="toggle" for="toggle"></label>
-            </header>
-            <ul id="login">
-                <li><a href="#"><img src="images/btn_nav01.png" alt="로그인"></a></li>
-                <li><a href="#"><img src="images/btn_nav02.png" alt="회원가입"></a></li>
-                <li><a href="#"><img src="images/btn_nav03.png" alt="마이페이지"></a></li>
-                <li><a href="#"><img src="images/btn_nav04.png" alt="상담"></a></li>
-                <li><a href="#"><img src="images/btn_nav05.png" alt="장바구니"></a></li>
-            </ul>
-            <ul id="main_nav">
-                <li>
-                    <h3><img src="images/nav_brand.png" alt="brand"></h3>
-                    <ul class="sub">
-                        <li><a href="#" style="color: #812e41; font-weight: 800;">마녀공장</a></li>
-                        <li><a href="#">자오담</a></li>
-                        <li><a href="#">60brix</a></li>
-                        <li><a href="#">100BON 향수</a></li>
-                        <li><a href="#">베네펫</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3><img src="images/nav_shopping.png" alt="shopping"></h3>
-                    <ul class="sub">
-                        <li><a href="#">브랜드별</a></li>
-                        <li><a href="#">테마별</a></li>
-                        <li><a href="#">카테고리</a></li>
-                        <li><a href="#">큐레이션</a></li>
-                        <li><a href="#">타입별</a></li>
-                        <li><a href="#">라인별 </a></li>
-                    </ul>
-                </li>
-                <li>
-                    <h3><img src="images/nav_event.png" alt="event"></h3>
-                </li>
-                <li>
-                    <h3><img src="images/nav_review.png" alt="review"></h3>
-                </li>
-                <li>
-                    <h3><img src="images/nav_lab.png" alt="ma:nyoLab"></h3>
-                </li>
-            </ul> 
-        </div>
-        <label class="btn_close" for="toggle"></label>
-    </nav>
-</div>
-
 <script>
-    $(function() {
-        setTimeout(function(){
-                $("#main_event").addClass("active");
-        }, 1000);
+    $(function(){
+        $("#goTop").click(function(){
+            $("html, body").animate({scrollTop : 0}, 1000);
+            return false;
+        });
     });
-    
 </script>
 
-<section id="main_event">
-    <label class="go_main" for="go_main"><a href="main_page.html">
-        <img src="images/btn_index_close.png" alt="메인페이지로 이동"></a>
-    </label>
-    <div id="con">
-        <h3>#모공세정 #보습세정</h3>
-        <img id="new" src="images/index_new.png" alt="new">
-        <h1>
-            퓨어 &amp; 딥 클렌징 폼<br>
-            출시기념
-        </h1>
-        <img id="products" src="images/index_products.png" alt="퓨어 딥 클렌징 폼">
+<div id="goTop"></div>
+<div id="kakaotalk"><a href="a"><img src="images/kakaotalk.jpg" alt="카카오톡 상담"/></a></div>
+
+<header id="main_header">
+    <h1 id="logo">
+        <a href="#"><img src="images/header_logo.png" alt="로고이미지"/></a>
+    </h1>
+    <script>
+        $(function(){
+            $("#main_nav >ul >li").mouseover(function(){
+                $("#main_header").addClass("over");
+            });
+            
+            $("#main_nav").mouseleave(function(){
+                $("#main_header").removeClass("over");
+            });
+            
+        });
+    </script>
+    <nav id="main_nav">
+        <ul>
+            <li class="main_menu">
+                <a href="#"><img src="images/header_main_nav01.png" alt="brand"/></a>
+                <ul class="sub_menu">
+                    <li><a href="introduce.html">마녀공장</a></li>
+                    <li><a href="#">자오담</a></li>
+                    <li><a href="#">60brix</a></li>
+                    <li><a href="#">100BON 향수</a></li>
+                    <li><a href="#">베네펫</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><img src="images/header_main_nav02.png" alt="shopping"/></a>
+                <ul class="sub_menu">
+                    <li><a href="#">브랜드별</a></li>
+                    <li><a href="#">테마별</a></li>
+                    <li><a href="#">카테고리</a></li>
+                    <li><a href="#">큐레이션</a></li>
+                    <li><a href="#">타입별</a></li>
+                    <li><a href="#">라인별</a></li>
+                </ul>
+            </li>
+            <li><a href="#"><img src="images/header_main_nav03.png" alt="event"/></a></li>
+            <li><a href="#"><img src="images/header_main_nav04.png" alt="review"/></a></li>
+            <li><a href="#"><img src="images/header_main_nav05.png" alt="ma:nyo Lab"/></a></li>
+        </ul>
+    </nav>
+    <nav id="sub_nav">
+        <ul>
+            <li><a href="#"><img src="images/header_sub_nav01.png" alt="로그인"/></a></li>
+            <li><a href="#"><img src="images/header_sub_nav02.png" alt="회원가입"/></a></li>
+            <li><a href="#"><img src="images/header_sub_nav03.png" alt="마이페이지"/></a></li>
+            <li><a href="#"><img src="images/header_sub_nav04.png" alt="상담"/></a></li>
+            <li><a href="#"><img src="images/header_sub_nav05.png" alt="장바구니"/></a></li> 
+        </ul>
+    </nav>
+</header>
+
+<section id="banner_slider">
+    <div class="imgs_wrap">
+        <div class="imgs">
+            <img src="images/banner_slider01.jpg" alt="베너슬라이더 이미지1"/>
+            <img src="images/banner_slider02.jpg" alt="베너슬라이더 이미지2"/>
+            <img src="images/banner_slider03.jpg" alt="베너슬라이더 이미지3"/>
+        </div>
+    </div>
+    <ul class="buttons">
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+    
+    <button class="btn_next"></button>
+    <button class="btn_prev"></button>
+</section>
+
+<section id="brand">
+    <h3 class="title"><img src="images/brand_title.png" alt="브랜드"/></h3>
+    <div class="content">
+        <ul>
+            <li><a href="#"><img src="images/brand_contents 01.jpg" alt="마녀공장 브랜드 이미지"/></a></li>
+            <li><a href="#"><img src="images/brand_contents 02.jpg" alt="자오담 브랜드 이미지"/></a></li>
+            <li><a href="#"><img src="images/brand_contents 03.jpg" alt="베네펫 브랜드 이미지"/></a></li>
+            <li><a href="#"><img src="images/brand_contents 04.jpg" alt="60브릭스 브랜드 이미지"/></a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="event">
+    <h3 class="title"><img src="images/event_title.png" alt="이벤트"/></h3>
+    <div class="content">
+        <ul>
+            <li><a href="#"><img src="images/event01.jpg" alt="91만병 돌파 이벤트"/></a></li>
+            <li><a href="#"><img src="images/event02.jpg" alt="퓨어 딥 클렌징 1+1"/></a></li>
+            <li><a href="#"><img src="images/event03.jpg" alt="삼초진정 마스크"/></a></li>
+            <li><a href="#"><img src="images/event04.jpg" alt="플친만을 위한 추가 혜택"/></a></li>
+            <li><a href="#"><img src="images/event05.jpg" alt="쇼핑전 필독, 빙고 이벤트"/></a></li>
+            <li><a href="#"><img src="images/event06.jpg" alt="구매금액별 사은품"/></a></li>
+            <li><a href="#"><img src="images/event07.jpg" alt="무료 샘플북"/></a></li>
+            <li><a href="#"><img src="images/event08.jpg" alt="단상자 이벤트"/></a></li>
+        </ul>
+    </div>
+</section>
+
+<section id="best_sellers">
+    <h3 class="title"><img src="images/bestseller_title.png"/></h3>
+    <div class="content">
+        <ul>
+            <li>
+                <a href="#">
+                    <div>
+                        <h2><img src="images/bestseller01.jpg" alt="갈락토미 나이아신 에센스 더블 SET"/></h2>
+                        <strong><img src="images/bestseller_event.png"/></strong>
+                        <h3>갈락토미 나이아신 에센스 더블 SET</h3>
+                        <p>
+                            <span class="discount">40%</span>
+                            <span class="price1">58,000</span>
+                            <span class="price2">34,800 </span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <h2><img src="images/bestseller02.jpg" alt="갈락토미 나이아신 에센스(+사은품)"/></h2>
+                        <strong><img src="images/bestseller_event.png"/></strong>
+                        <h3>갈락토미 나이아신 에센스(+사은품)</h3>
+                        <p>
+                            <span class="discount">31%</span>
+                            <span class="price1">29,000</span>
+                            <span class="price2">19,900</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <h2><img src="images/bestseller03.jpg" alt="퓨어&딥 클렌징 폼 1+1 기획 SET"/></h2>
+                        <strong><img src="images/bestseller_new.png"/></strong>
+                        <h3>퓨어&딥 클렌징 폼 1+1 기획 SET</h3>
+                        <p>
+                            <span class="discount">29%</span>
+                            <span class="price1">14,000</span>
+                            <span class="price2">9,900</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <h2><img src="images/bestseller04.jpg" alt="퓨어 클렌징 오일 400ml"/></h2>
+                        <strong><img src="images/bestseller_event.png"/></strong>
+                        <h3>퓨어 클렌징 오일 400ml</h3>
+                        <p>
+                            <span class="discount">19%</span>
+                            <span class="price1">49,000</span>
+                            <span class="price2">39,900</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <h2><img src="images/bestseller05.jpg" alt="각질 집중 케어 SET"/></h2>
+                        <strong>10월 한정</strong>
+                        <h3>각질 집중 케어 SET</h3>
+                        <p>
+                            <span class="discount">25%</span>
+                            <span class="price1">38,900</span>
+                            <span class="price2">29,000</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <h2><img src="images/bestseller06.jpg" alt="Fall in 마녀공장 SET"/></h2>
+                        <strong>10월 한정</strong>
+                        <h3>Fall in 마녀공장 SET</h3>
+                        <p>
+                            <span class="discount">40%</span>
+                            <span class="price1">35,000</span>
+                            <span class="price2">21,000</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <h2><img src="images/bestseller07.jpg" alt="소다폼"/></h2>
+                        <strong><img /></strong>
+                        <h3>소다폼</h3>
+                        <p>
+                            <span class="discount"></span>
+                            <span class="price1"></span>
+                            <span class="price2">20,000</span>
+                        </p>
+                    </div>
+                    <div class="detail">
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div>
+                        <h2><img src="images/bestseller08.jpg" alt="갈락토미 클리어스킨 토너"/></h2>
+                        <strong><img /></strong>
+                        <h3>갈락토미 클리어스킨 토너</h3>
+                        <p>
+                            <span class="discount"></span>
+                            <span class="price1"></span>
+                            <span class="price2">29,000</span>
+                        </p> 
+                    </div>
+                    <div class="detail">
+                    </div>
+                </a>
+            </li>
+        </ul>
     </div>
 </section>
 
 <footer>
-    <div id="m_footer">
+   <div>
         <h1 id="f_logo">
-            <a href="#"><img src="images/f_logo.png" alt="ma:nyo로고"></a>
+            <a><img src="images/footer_logo.jpg" alt="마녀공장로고이미지"/></a>
         </h1>
-        <ul id="policy">
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">이용약관</a></li>
-        </ul>
-    </div>
-    <div id="address">
-        <span>대표이사 김현수</span>
-        <span>서울특별시 강남구 봉은사로43길 18,2층,3층</span>
-        <span>사업자등록번호 108-86-00365 <a href="#">사업자번호조회&gt;</a></span>
-        <span>메일 mf855@naver.com | 팩스번호 02-6280-0829</span>
-        <span>호스팅제공 : 엔에이치앤고도(주)</span>
-        <span>COPYRIGHT © MAYOFACTORY ALL RIGHTS RESERVED.</span>
-        <span>(주)이니시스의 구매안전(에스크로)에</span>
-        <span>가입하여 서비스를 제공하고 있습니다 <a href="#">가입확인&gt;</a></span>
+        <div id="f_corp">
+            <div id="left">
+                <ul id="f_policy">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                </ul>
+                <div id="f_manyo">
+                <h3>마녀공장</h3>
+                <adress>
+                    <span>대표이사 김현수 | 서울특별시 강남구 봉은사로43길 18,2층,3층 | 사업자등록번호 108-86-00365<a href="#">사업자번호 조회 &gt;</a></span><br />
+                    <span>통신판매업신고번호 제2018-서울강남-01835호 | 개인정보관리자 안보경</span><br />
+                    <span>메일 mf0855@naver.com | 팩스번호 02-6280-0829</span><br />
+                    <span>마케팅, 제휴 문의 manyofactory_mkt@manyo.co.kr | 입점, 수출 문의 manyofactory_biz@manyo.co.kr</span><br />
+                    <span>호스팅제공 : 엔에이치엔고도(주) | COPYRIGHT &copy; MANYOFACTORY ALL RIGHTS RESERVED.</span><br />
+                    <span>안전거래를 위해 (주)이니시스의 구매안전(에스크로)에 가입하여 서비스를 제공하고 있습니다.<a href="#">가입확인 &gt;</a></span>
+                </adress>
+                </div>
+            </div>
+            <div id="service">
+                <h3><img src="images/footer_service.jpg" alt="고객센터 02-6013-0855" /></h3>
+                <span>상담시간 10:00 ~17:00</span><br />
+                <span>점심시간 12:30 ~14:00</span><br />
+                <span>토요일 / 일요일 / 공휴일 휴무</span><br />
+                <span>카카오톡 ID 마녀공장</span><br />
+                <span>주말 및 공휴일은 1:1 상담을 이용해주세요</span>
+            </div>
+        </div>
     </div>
 </footer>
 
-
-</body></html>
+</body>
+</html>

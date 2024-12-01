@@ -1,0 +1,82 @@
+/* banner_slider.css */
+
+#banner_slider{
+    width: 100%; height: 805px;
+    margin-top: 136px;
+    position: relative;
+}
+    .imgs_wrap{
+        width: 100%; height: 805px;
+        overflow: hidden;
+        position: absolute;
+        left: 0; top: 0;
+    }
+        .imgs{
+            width: 5706px; height: 805px;
+
+            position: absolute;
+            left: 0; top: 0;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+            .imgs >img{float: left;}
+
+    ul.buttons{
+        position: absolute;
+        left: 50%; bottom: 20px;
+        margin-left: -80px;
+        opacity: 0.3;
+    }
+        ul.buttons >li{
+            float: left;
+            width: 20px; height: 20px;
+            background: #fff;
+            border-radius: 10px;
+            margin: 0 5px;
+            text-indent: -6000px; overflow: hidden;
+            transition-duration: 0.3s;
+        }
+        ul.buttons >li.active{
+            width: 60px;
+            background: #fff;
+        }
+
+        button.btn_next,
+        button.btn_prev{
+            width: 80px; height: 150px;
+            position: absolute;
+            top: 50%; margin-top: -75px;
+            
+            opacity: 0.3;
+        }
+        button.btn_next{
+            right: 150px;
+            background: url(../images/btn_next.png);
+        }
+        button.btn_prev{
+            left: 150px;
+            background: url(../images/btn_prev.png);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

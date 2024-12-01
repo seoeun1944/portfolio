@@ -1,0 +1,127 @@
+/* contents_style.css */
+
+/**** CONTENTS STYLE ***********************/
+#contents{
+    width: 1137px;
+    margin: 0 auto;
+}
+
+    #title{
+        width: 144px; height: 49px;
+        margin: 0 auto 42px;
+        background: url(../images/contents_title.jpg);
+        text-indent: -6000px; overflow: hidden;
+    }
+
+        #contents ul{
+            overflow: hidden;
+        }
+            #contents ul >li.con1{
+                float: left;
+                margin-left: 170px;
+                margin-bottom: 22px;
+            }
+            #contents ul >li.con2{
+                float: right;
+                margin-bottom: 22px;
+            }
+            .con2 >ul >li:first-child{
+                margin-bottom: 22px;
+            }
+            #contents ul >li.con3{
+                float: left;
+            }
+            .con3 >ul >li:first-child{
+                margin-bottom: 22px;
+            }
+            #contents ul >li.con4{
+                float: right;
+                margin-right: 170px;
+            }
+
+/**** AWRAD STYLE ***********************/
+#award{
+    margin-top: 97px;
+}
+    #thanks{
+        width: 744px; height: 503px;
+        margin: 0 auto 20px;
+    }
+    #list{
+        width: 744px;
+        margin: 0 auto 110px;
+        font-family: 'Noto Sans KR', sans-serif;
+    }
+        #list >ul{}
+            #list >ul >li.award_con{
+                overflow: hidden;
+                margin-bottom: 62px;
+            }
+            #list >ul >li.award_con:last-child{
+                margin: 0;
+            }
+                .award_con >h3{
+                    float: left;
+                    border-right: 2px solid #ddd;
+                    margin-left: 36px;
+                }
+                .award_con >div{
+                    float: left;
+                    margin-left: 38px;
+                }
+                    .award_con >div >p{
+                        color: #b2b2b2;
+                        font-size: 17px;
+                        height: 35px;
+                        line-height: 35px;
+                    }
+                    .award_con >div >h3{
+                        height: 26px;
+                        line-height: 26px;
+                        font-size: 17px;
+                        font-weight: bold;
+                    }
+                    .award_con >div >h4{
+                        height: 32px;
+                        line-height: 32px;
+                        font-size: 17px;
+                        font-weight: bold;
+                    }
+                        .award_con >div >h4 >strong{
+                            color: #990428;
+                            font-weight: bold;
+                        }
+
+    #shopping{
+        margin: 0 auto;
+        width: 737px; height: 115px;
+        text-align: center;
+        line-height: 115px;
+        background-color: #832b41;
+        border-radius: 57px;
+        margin-bottom: 105px;
+    }
+        #shopping >a{
+            color: #fff;
+            font-size: 50px;
+            font-weight: bold;
+            
+            background: url(../images/btn_shopping.png) no-repeat center right;
+            margin-right: 48px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

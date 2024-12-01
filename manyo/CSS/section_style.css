@@ -1,0 +1,160 @@
+/* section_style.css */
+
+section{
+}
+    .title{
+        height: 100px;
+}
+.title >img{
+    display: block;
+    margin: 60px auto;
+}
+    section >.content{}
+
+/** BRAND LAYOUT ***********************/
+section#brand{
+    overflow: hidden;
+}
+        #brand li{
+            display: block;
+            float: left;
+        }
+
+/** EVENT LAYOUT ***********************/
+section#event{}
+    #event >.content{
+        width: 1173px;
+        overflow: hidden;
+        margin-left: 367px;
+    }
+        #event ul{}
+            #event ul >li{
+                float: left;
+                padding-left: 29px;
+            }
+            #event ul >li:nth-of-type(1),
+            #event ul >li:nth-of-type(5){
+                padding: 0;
+            }
+            #event ul >li:nth-of-type(1),
+            #event ul >li:nth-of-type(2),
+            #event ul >li:nth-of-type(3),
+            #event ul >li:nth-of-type(4){
+                padding-bottom: 40px;
+            }
+
+/** BEST_SELLERS LAYOUT ***********************/
+section#best_sellers{}
+    #best_sellers >.content{
+        width: 1173px;
+        overflow: hidden;
+        margin-left: 367px;
+    }
+        #best_sellers ul{}
+            #best_sellers ul >li{
+                width: 271px; height: 404px;
+                text-align: center;
+                float: left;
+                margin-left: 29px;
+                background-color: #f4f4f4;
+
+            }
+            #best_sellers ul >li:nth-of-type(1),
+            #best_sellers ul >li:nth-of-type(5){
+                margin: 0;
+            }
+            #best_sellers ul >li:nth-of-type(1),
+            #best_sellers ul >li:nth-of-type(2),
+            #best_sellers ul >li:nth-of-type(3),
+            #best_sellers ul >li:nth-of-type(4){
+                margin-bottom: 40px;
+            }
+                #best_sellers ul >li > a{
+                    width: 271px; height: 404px;
+                    position: relative;
+                }
+                #best_sellers ul >li > a > div{
+                    width: 271px; height: 404px;
+                    position: absolute;
+                    left: 0; top: 0;
+                }
+                #best_sellers ul > li > a > div.detail{ 
+                    background: url(../images/view_detail02.png) no-repeat center rgba(255,255,255,0.5);
+                    opacity: 0;
+                    transition-duration: 0.3s;
+                }
+                #best_sellers ul > li:hover > a > div.detail{
+                    opacity: 1;
+                }
+
+                    #best_sellers strong >img{
+                        height: 14px;
+                        display: block;
+                        margin: 11px auto;
+                    }
+                    #best_sellers strong{
+                        display: block;
+                        margin: 11px auto;
+                    }
+
+                    #best_sellers strong,
+                    #best_sellers h3,
+                    #best_sellers p{
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 600;
+                        letter-spacing: -1px;
+                    }
+                    #best_sellers strong{
+                        font-size: 15px;
+                    }
+                    #best_sellers h3{
+                        font-size: 12px;
+                        margin-bottom: 10px;
+                    }
+                    #best_sellers p{
+                        font-size: 17px;
+                    }
+                        .discount{
+                            margin-right: 16px;
+                        }
+                        .price1{
+                            margin-right: 12px;
+                            color: #9d9c9d;
+                            text-decoration: line-through;
+                        }
+                        .price2{
+                            color: #822c40;
+                        }
+
+                        #best_sellers ul >li:nth-of-type(7) .discount,
+                        #best_sellers ul >li:nth-of-type(7) .price1,
+                        #best_sellers ul >li:nth-of-type(8) .discount,
+                        #best_sellers ul >li:nth-of-type(8) .price1{
+                            margin: 0;
+                        }
+
+
+/** HOVER STYLE *******************/
+/*
+#best_sellers li{
+    background: url(../images/bg_bestseller.jpg) no-repeat;
+}
+#best_sellers li:hover{
+    background: url(../images/bg_view%20detail.png) no-repeat;
+    opacity: 0.3;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
