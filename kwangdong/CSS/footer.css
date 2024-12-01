@@ -1,0 +1,209 @@
+/* footer.css */
+footer{
+    background: #292929;
+    width: 100%;
+    margin-top: 100px;
+}
+    #policy{
+        width: 100%; height: 60px;
+        border-bottom: 1px solid #656565;
+    }
+        #policy >ul{   
+            width: 1116px;
+            margin: 0 auto;
+            display: table;
+        }
+        @media screen and (max-width: 1366px){
+        #policy >ul{width: 100%;}
+        }
+            #policy >ul >li{   
+                width: 25%;
+                display: table-cell;
+            }
+            @media screen and (max-width: 414px){
+            #policy >ul >li{
+                width: 50%;
+                float: left;
+                }
+            }
+            #policy >ul >li::after{
+                content: "";
+                display: block;
+                width: 1px; height: 18px;
+                background: #656565;
+                
+                margin-top: -40px;
+            }
+            @media screen and (max-width: 767px){
+            #policy >ul >li::after{display: none;}
+            }
+            #policy >ul >li:first-child::after{
+                display: none;
+            }
+                #policy >ul >li >a{
+                    color: #ffffff;
+                    text-align: center;
+                    font-weight: 700;
+                    color: #656565;
+                    line-height: 60px;
+                }
+                @media screen and (max-width: 767px) and (min-width: 415px){
+                #policy >ul >li >a{font-size: 14px;}
+                }
+                @media screen and (max-width: 414px){
+                #policy >ul >li >a{
+                    font-size: 14px;
+                    line-height: 30px;
+                }
+                }
+
+    #copyright{
+        width: 1116px;
+        margin: 80px auto 40px;
+        overflow: hidden;
+    }
+    @media screen and (max-width: 1366px){
+    #copyright{
+        width: 100%;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+    }
+    @media screen and (max-width: 414px){
+    #copyright{
+        padding-left: 5%;
+        margin: 40px auto 20px;
+        }
+    }
+        #f_logo{
+            float: left;
+            padding-right: 70px;
+        }
+            #f_logo >a{
+            }
+                #f_logo >a >img{
+                    width: 100%;
+                }
+                @media screen and (max-width: 768px) and (min-width: 415px){
+                #f_logo >a >img{width: 180px;}
+                }
+                @media screen and (max-width: 414px){
+                #f_logo >a >img{width: 150px;}
+                }
+
+        #copyright >address{
+        }
+        @media screen and (max-width: 1366px){
+        #copyright >address{float: left;}
+        }
+        @media screen and (max-width: 768px){
+        #copyright >address{margin-top: 20px;}
+        }
+            #copyright >address >span{
+                line-height: 30px;
+                color: #868686;
+                font-size: 16px;
+                font-weight: 700;
+                display: block;
+            }
+            @media screen and (max-width: 414px){
+            #copyright >address >span{ 
+                line-height: 20px;
+                font-size: 12px;
+                }
+            }
+
+    #more{
+        overflow: hidden;
+        width: 1116px;
+        margin: 0 auto;
+        padding: 0 0 140px 0;
+    }
+    @media screen and (max-width: 1366px) and (min-width:768px){
+    #more{width: 100%;}
+    }
+    @media screen and (max-width: 767px){
+    #more{
+        width: 100%;
+        padding: 0 20px 0 0;
+        box-sizing: border-box;
+    }
+    }
+        #wrap_more{
+            float: right;
+        }
+        @media screen and (max-width: 552px){
+        #wrap_more{float: left;}
+        }
+            #wrap_more >ul{
+                float: left;
+            }
+                #wrap_more >ul >li{
+                    float: left;
+                    margin-left: 20px;
+                }
+                @media screen and (max-width: 320px){
+                #wrap_more >ul >li{margin-left: 10px;}
+                }
+                    #wrap_more >ul >li >a{
+                    }
+                        #wrap_more >ul >li >a >img{
+                        }
+            #wrap_more >div{
+                float: left;
+                height: 180px;
+            }
+            @media screen and (max-width: 552px){
+            #wrap_more >div{margin-top: 20px;}
+            }
+                #wrap_more >div >label{
+                    width: 190px; height: 45px;
+                    border: 1px solid #656565;
+                    color: #656565;
+                    margin-left: 30px;
+                    line-height: 45px;
+                    padding-left: 20px;
+                    
+                    background: url(../images/icon_familystie.png) no-repeat 160px center;
+                }
+                @media screen and (max-width: 552px) and (min-width: 415px){
+                #wrap_more >div >label{margin-left: 20px;}
+                }
+                @media screen and (max-width: 414px){
+                #wrap_more >div >label{margin-left: 5%;}
+                }
+                input#site_more:checked + label{
+                    background: url(../images/icon_familystie_f.png) no-repeat 160px center;
+                }
+                #wrap_more >div >input{
+                    display: none;
+                }
+                #wrap_more >div >nav{
+                    width: 190px; height: 0;
+                    overflow: hidden;
+                    padding-left: 20px;
+                    margin-left: 30px;
+                }
+                input#site_more:checked + label + nav{
+                    height: 135px;
+                    border: 1px solid #656565;
+                    border-top: none;
+                    
+                    transition-duration: 0.3s;
+                }
+                    #wrap_more >div >nav >ul{
+                    }
+                        #wrap_more >div >nav >ul >li{
+                            height: 45px;
+                        }
+                            #wrap_more >div >nav >ul >li >a{
+                                color: #656565;
+                                line-height: 45px;
+                            }
+
+
+
+
+
+
+

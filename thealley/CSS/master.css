@@ -1,0 +1,21 @@
+/* master.css */
+
+@import url(header_style.css);
+@import url(contents_style.css);
+@import url(footer_style.css);
+
+body{
+    position: relative;
+}
+
+/*사이드 메뉴바 때문에 좌우 폭 고정*/
+.fix{
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}
+
+
+
+
+

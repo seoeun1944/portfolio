@@ -1,0 +1,58 @@
+/* common.css */
+
+html, body{
+    font-family: Dotum, "돋움", sans-serif;
+    font-size: 18px;
+}
+
+/** COMMON ******************/
+*{margin: 0; padding: 0;}
+html, body{
+    font: 18px 'Dotum', sans-serif;
+    font-weight: 400; 
+    color: #000;
+}
+table, tr, th, td{
+    font: 18px 'Dotum', sans-serif;
+    color: #000; 
+    border-collapse: collapse;
+}
+input, select, option, textarea, button{
+    font: 18px 'Dotum', sans-serif;
+    font-weight: 400; 
+    color: #000; 
+    border: none; 
+    outline: none; 
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: 1.0em;
+    font-weight: normal;
+}
+a, img, label{
+    display: block;
+}
+legend, hr, caption{
+    display: none;
+}
+img, iframe, frameset, fieldset{
+    border: 0 none;
+}
+ul, ol, li{
+    list-style: none;
+}
+b, strong{
+    font-weight: normal;
+}
+em, i, address{
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/** STYLE ****************/
+input#toggle_menu{
+    display: none;
+}

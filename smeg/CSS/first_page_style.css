@@ -1,0 +1,162 @@
+/* first_page_style.css */
+
+/** FIRST_PAGE01 STYLE **/
+#first_page01{
+    position: relative;
+    display: block;
+    width: 1281px; height: auto;
+    margin: 0 auto;
+    
+    overflow: hidden;
+}
+@media screen and (max-width: 1366px) and (min-width:768px){
+#first_page01{width: 672px;}
+}
+@media screen and (max-width: 767px){
+#first_page01{width: 450px;}
+}
+    #first_page01 >h1{
+        display: inline-block;
+        width: 662px; height: 165px;
+        
+        position: absolute;
+        left: 50%; top: 100px;
+        margin-left: -630px;
+    }
+    @media screen and (max-width: 1366px) and (min-width:768px){
+    #first_page01 >h1{
+        left: 0;
+        margin-left: 10px;
+    }
+    }
+    @media screen and (max-width: 767px){
+    #first_page01 >h1{
+        width: 450px;
+        left: 0; top: 50px;
+        margin-left: 10px;
+    }
+    }
+        @media screen and (max-width: 767px){
+        #first_page01 >h1 >img{width: 100%;}
+        }
+    #first_page01 >div{
+        margin: 10px;
+        padding-top: 180px;
+        float: left;
+    }
+    @media screen and (max-width: 767px){
+    #first_page01 >div{padding-top: 80px;}
+    }
+        #coffee_drip >img{
+            margin-top: 91px;
+        }
+        @media screen and (max-width: 767px){
+        #coffee_drip >img{width: 450px;}
+        }
+    @media screen and (max-width: 1366px){
+    #coffee_auto{display: none;}
+    }
+
+        #first_page01 span{
+            color: #000;
+            font-family: 'Racing Sans One', cursive;
+            font-size: 18px;
+            font-weight: 700;
+            display: inline-block;
+            position: absolute;
+        }
+        #coffee_drip >span{
+            transform: rotateZ(-90deg); 
+            left: -10px; bottom: 60px;
+        }
+        #coffee_auto >span{
+            position: absolute;
+            right: 600px; top: 200px;
+        }
+/** //FIRST_PAGE01 STYLE **/
+
+/** FIRST_PAGE02 STYLE **/
+#first_page02{
+    position: relative;
+    display: block;
+    width: 100%; height: 600px;
+    padding-top: 50px;
+}
+    #first_page02 >h1{
+        display: block;
+        float: left;
+        margin-left: 140px;
+        margin-top: 0;
+    }
+        #first_page02 >h1 >img{
+        }
+    #fab_wrap{
+        display: block;
+        
+        position: absolute;
+        left: 140px; bottom: 0;
+    }
+    @media screen and (max-width: 1219px){
+    #fab_wrap{
+        width: 100%;
+        display: table;
+        left: 50%;
+        margin-left: -50%;
+        }
+    }
+        #fab_wrap >div{
+            float: left;
+            width: 300px;
+            position: relative;
+        }
+        @media screen and (max-width: 1219px){
+        #fab_wrap >div{
+            display: table-cell;
+            width: 31%;
+            margin: 1%;
+        }
+        }
+            #fab_wrap >div >img{
+                width: 100%;
+            }
+            #fab_wrap >div >span{
+                color: #000;
+                font-family: 'Racing Sans One', cursive;
+                font-size: 18px;
+                font-weight: 700;
+                display: inline-block;
+                position: absolute;
+                left: 10px; top: 10px;;
+            }
+    #fab_bigimg{
+        display: block;
+        float: right;
+        margin-right: 140px;
+    }
+    @media screen and (max-width: 1219px){
+    #fab_bigimg{display: none;}
+    }
+
+
+/** //FIRST_PAGE02 STYLE **/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

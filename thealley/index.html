@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Alley</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/common.css" />
+    <link rel="stylesheet" href="CSS/master.css" />
+    <link rel="stylesheet" href="CSS/swiper.css">
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/sns_slider.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    .swiper-container {
+      width: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+<body>
+<div class="fix">
+    <header>
+        <!-- 메인메뉴 -->
+        <nav id="main_menu">
+            <h1 class="m_logo"><a href="index.html">logo</a></h1>
+            <label class="toggle_menu" for="toggle_menu">toggle</label>
+            <div id="quick_menu">
+                <ul>
+                    <li><a href="#quality">QUALITY</a></li>
+                    <li><a href="#best">BEST</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <ul class="sns">
+                <li class="facebook"><a href="https://www.facebook.com/%EB%8D%94-%EC%95%A8%EB%A6%AC-%EC%BD%94%EB%A6%AC%EC%95%84-The-Alley-Korea-2177235785893759/ " target="_blank">facebook</a></li>
+                <li class="instagram"><a href="https://www.instagram.com/thealley.kr/" target="_blank">instagram</a></li>
+            </ul>
+        </nav>
+        <!-- //메인메뉴 -->
+        
+        <!-- 태블릿 모바일 메인메뉴 -->
+        <script>
+            $(function(){
+                setInterval(function(){
+                    if($(window).scrollTop()>=80){
+                        $("#mt_menu").css({backgroundColor: "rgba(0,0,0,0.3)"});
+                    }else{
+                        $("#mt_menu").css({backgroundColor: "rgba(0,0,0,0)"});
+                    }
+                },50);
+            });
+        </script>
+        <nav id="mt_menu">
+            <h1 class="m_logo">logo</h1>
+            <label class="toggle_menu" for="toggle_menu">toggle</label>
+            <div id="quick_menu2">
+                <ul>
+                    <li><a href="#quality">QUALITY</a></li>
+                    <li><a href="#best">BEST</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- //태블릿 모바일 메인메뉴 -->
+
+        <input id="toggle_menu" type="checkbox" />
+        <nav id="main_nav">
+            <div>
+                <h1 id="nav_logo">logo</h1>
+                <label class="btn_close" for="toggle_menu">닫기버튼</label>
+                <div id="nav_quick_menu">
+                    <ul>
+                        <li><a href="#quality">QUALITY</a></li>
+                        <li><a href="#best">BEST</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <ul class="nav_sns">
+                    <li class="facebook"><a href="https://www.facebook.com/%EB%8D%94-%EC%95%A8%EB%A6%AC-%EC%BD%94%EB%A6%AC%EC%95%84-The-Alley-Korea-2177235785893759/ " target="_blank"><img src="images/nav_btn_facebook.png" alt="페이스북 로고" /></a></li>
+                    <li class="instagram"><a href="https://www.instagram.com/thealley.kr/" target="_blank"><img src="images/nav_btn_instagram.png" alt="인스타그램 로고" /></a></li>
+                </ul>
+            </div>
+
+            <ul class="nav_menu">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+
+            <div class="menu_bg"></div>
+        </nav>
+
+        <!-- 메인메뉴2 -->
+        <nav id="sub_header">
+            <h1 id="s_logo">logo</h1>
+            <ul class="menu">
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MENU</a></li>
+                <li><a style="color: #2b3d41; font-weight: 900;" href="store_info.html" target="_blank" >STORE</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- //메인메뉴2 -->
+    </header>
+
+    <div id="video">
+        <video src="images/THE%20ALLEY%20INDEX%20VIDEO.mp4" autoplay loop muted></video>
+    </div>
+    
+    <div id="banner">
+        <div id="slider">
+            <img src="images/banner_img01.png" alt="아쌈 밀크티 이미지" />
+            <img src="images/banner_img02.png" alt="패션 프룻 그린티 이미지" />
+            <img src="images/banner_img03.png" alt="브라운 슈가 디어리오카 그린티 이미지" />
+        </div>
+    </div>
+    
+    <div id="m_banner">
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner_img01.jpg" alt="아쌈 밀크티 이미지" /></div>
+            <div class="swiper-slide"><img src="images/banner_img02.jpg" alt="패션 프룻 그린티 이미지" /></div>
+            <div class="swiper-slide"><img src="images/banner_img03.jpg" alt="브라운 슈가 디어리오카 그린티 이미지" /></div>
+        </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    </div>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'progressbar',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    
+    
+    <div class="bg">
+        <section id="hiring">
+            <h2 class="title"><img src="images/hiring_title.png" alt="we are hiring join our team!" /></h2>
+            <img src="images/hiring_img.png" alt="It’s time for Tea!" />
+            <h3 class="h_con">
+            더 앨리 코리아와 함께할 멤버를 모집합니다.<br />
+            글로벌 프리미엄 브랜드 더 앨리의 시작에 함께 해주세요.
+            </h3>
+            <h3 class="email">help@thealleykorea.com</h3>
+        </section>
+    </div>
+    
+    <section id="introduce">
+        <div id="bs">
+            <div class="bg_intro">
+                <img src="images/bs_img.png" alt="브라운슈가 디어리오카 밀크 이미지" />
+            </div>
+            
+            <div class="con_intro">
+                <h1 class="name">brown sugar <br />deerioca</h1>
+                <h3 class="con">
+                    신선한 비정제 설탕으로 직접 만든 브라운 슈가 시럽과 디어리오카가 <br />
+                    풍부한 맛을 냅니다. 한층 달콤하면서도 깊 은 맛과 향은 지금까지의 <br />
+                    밀크티와는 차원이 다른 경험을 제공할것입니다.<br />
+                    It’s time for Tea!
+                </h3>
+            </div> 
+            
+        </div>
+        <div id="aw">
+            <div class="bg_intro">
+                <img src="images/as_img.png" alt="오로라 시리즈 이미지" />
+            </div>
+            <div class="con_intro">
+                <h2 class="name">aurora <br />series</h2>
+                <h3 class="con">
+                    일상에 녹아드는 다양한 감동과 영감,<br />
+                    The Alley의 오로라 시리즈는 한 잔의 음료가 아닌<br />
+                    건강하고 아름다운 티음료입니다.자연의 빛과<br />
+                    아름다움을 포착하여 담아냈습니다.
+                </h3>
+                <div id="pv">
+                    <img src="images/pv.png" alt="Aurora Series PV" />
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <section id="quality">
+        <div>
+            <img class="sp1" src="images/quality_s01.png" alt="파티오카펄 이미지" />
+            <div class="beige">
+                <h3>Freshly <br />Prepared <br />Deerioca</h3>
+            </div>
+            <img class="tapioca" src="images/tapioca.png" alt="파티오카펄 이미지" />
+            <h4>
+                버블티의 주재료가 되는 슈가시럽,더 엘리에서는 풍미가 우수하고 정제되지 않은 
+                슈가 케인으로 건강하게 직접 만듭니다.
+            </h4>
+        </div>
+        <div>
+            <img class="sp2" src="images/quality_s02.png" alt="브라운슈가 이미지" />
+            <div class="green">
+                <h3>Making our <br />own sugar<br /> cane syrup</h3>
+            </div>
+            <img class="sugar" src="images/sugar.png" alt="브라운슈가 이미지" />
+            <h4>
+                신선한 비정제 설탕으로 직접 만든 브라운 슈가 시럽과 디어리오카가 풍부한 맛을 냅니다. 
+                한층 달콤하면서도 깊은 맛과 향은 지금까지의 밀크티와는 차원이 다른 경험을 제공할것입니다. 
+                It’s time for Tea!
+            </h4>
+        </div>
+        <div>
+            <img class="sp3" src="images/quality_s03.png" alt="티잎 이미지" />
+            <div class="beige">
+                <h3>Carefully <br />Selected<br /> Tea Leaves</h3>
+            </div>
+            <img class="tea" src="images/tea.png" alt="브라운슈가 이미지" />
+            <h4>
+                퀄리티가 보장된 티잎을 손으로 일일이 따는 공정 으로 생산하여 사용합니다. 
+                Hand-picked 티는 깊은 맛과 향을 간직하고 있으며 유니크한 풍미를 보장합니다.
+            </h4>
+        </div>
+    </section>
+
+    <script src="js/banner_slider.js"></script>
+    <section id="best">
+        <div id="item_text">
+            <ul class="buttons">
+                <li class="active">
+                <a class="active">brown sugar deerioca milk</a>
+                    <div><a>
+                        <strong>brown sugar deerioca milk</strong>
+                        <p>신선한 디어리오카와<br /> 비정제 흑설탕으로 풍부한 맛의<br /> 디어리오카 시리즈입니다.</p>
+                    </a></div>
+                </li>
+                <li>
+                    <a>aurora series</a>
+                    <div><a>
+                        <strong>aurora series</strong>
+                        <p>프리미엄 과일티와 과일초를<br /> 이용해서 만든티로 <br />부드러운 디톡스에 도움을 줍니다.</p>
+                    </a></div>
+                </li>
+                <li>
+                    <a>assam milk tea</a>
+                    <div><a>
+                        <strong>assam milk tea</strong>
+                        <p>깊은 블랙티의<br /> 맛과 풍미를 살린<br /> 더앨리의 밀크티 입니다.</p>
+                    </a></div>
+                </li>
+                <li>
+                    <a>garden mellow tea latte</a>
+                    <div><a>
+                        <strong>garden mellow <br />tea latte</strong>
+                        <p>부드럽고 달콤하게<br /> 녹아드는 다양한 맛의 멜로우 티 라떼를<br /> 더앨리에서 만나보세요.</p>
+                    </a></div>
+                </li>
+                <li>
+                <a>passion fruit green tea</a>
+                    <div><a>
+                        <strong>passion fruit green tea</strong>
+                        <p>더 앨리가 자신있게 소개하는<br /> Korea only / 이벤트 / 시즌 음료입니다. <br />특별하게 즐겨주세요.</p>
+                    </a></div>
+                </li>
+            </ul>
+        </div>
+
+        <div id="item" class="imgs_wrap">
+            <div class="imgs">
+                <img src="images/best_img01.png" alt="브라운슈가 디어리오카 밀크 이미지" />
+                <img src="images/best_img02.png" alt="오로라 시리즈 이미지" />
+                <img src="images/best_img03.png" alt="아쌈 밀크티 이미지" />
+                <img src="images/best_img04.png" alt="가든 멜로우 티라떼 이미지" />
+                <img src="images/best_img05.png" alt="패션프롯 그린티 이미지" />
+            </div>
+        </div>
+    </section>
+
+    <section id="best_mobile">
+        <h2>top <strong>5</strong></h2>
+        <div id="m_item">
+            <ul >
+                <li >
+                    <img src="images/best_img01.png" alt="브라운슈가 디어리오카 밀크 이미지" />
+                    <p> 1st brown sugar deerioca milk</p>
+                </li>
+                <li>
+                    <img src="images/best_img02.png" alt="오로라 시리즈 이미지" />
+                    <p> 2nd aurora series</p>
+                </li>
+                <li>
+                    <img src="images/best_img03.png" alt="아쌈 밀크티 이미지" />
+                    <p> 3rd assam milk tea</p>
+                </li>
+                <li>
+                    <img src="images/best_img04.png" alt="가든 멜로우 티라떼 이미지" />
+                    <p> 4th garden mellow tea latte</p>
+                </li>
+                <li>
+                    <img src="images/best_img05.png" alt="패션프롯 그린티 이미지" />
+                    <p> 5th passion fruit green tea</p>
+                </li>
+            </ul>
+        </div>
+        
+        <button class="btn_next">next</button>
+        <button class="btn_prev">prev</button>
+    </section>
+    
+    <section id="instagram">
+        <div id="sns_title">
+            <h2>#With THE ALLEY on</h2>
+            <img src="images/sns_instagram.png" alt="instagram" />
+            <p>@thealley.kr 팔로우 하고 소식 받아보세요.</p>
+        </div>
+        <div id="sns_slider">
+            <div class="imgs_wrap">
+                <ul>
+                <li><img src="images/sns_img01.jpg" alt="더앨리 스페셜 티음료" /></li>
+                <li><img src="images/sns_img02.jpg" alt="라인 프랜즈 콜라보 폰, 에어팟 케이스" /></li>
+                <li><img src="images/sns_img03.jpg" alt="디얼그레이 스노우벨벳" /></li>
+                <li><img src="images/sns_img04.jpg" alt="해피 뉴이어" /></li>
+                <li><img src="images/sns_img05.jpg" alt="브라운 호지 스윗 밀크티" /></li>
+                <li><img src="images/sns_img06.jpg" alt="해피 크리스마스 이벤트-무료토핑추가" /></li>
+                <li><img src="images/sns_img07.jpg" alt="이벤트 당청자 발표" /></li>
+                <li><img src="images/sns_img08.jpg" alt="한정판 리유저블 텀블러와 콜라보 음료 안내" /></li>
+                </ul>
+            </div>
+            <button class="btn_next"></button>
+            <button class="btn_prev"></button>
+        </div>
+    </section>
+
+<div id="contact_bg">
+    <section id="contact">
+        <div class="wrap">
+            <div>
+                <img src="images/contact_locationicon.png" alt="위치 아이콘 이미지" />
+                <h3>grobal site</h3>
+                <h2>the alley</h2>
+            </div>
+
+            <img src="images/contact_store_img.png" alt="매장 일러스트 이미지" />
+        </div>
+    </section>
+</div>
+   
+    <footer id="footer">
+        <h1 id="f_logo">the alley logo</h1>
+        <div class="address">
+            <p>E-mail：help@thealleykorea.com</p>
+            <p>[ Head office ] 13F, 702, Eonju-ro, Gangnam-gu, Seoul.</p>
+            <p><a href="tel:02-3448-3449">TEL: 02-3448-3449</a></p>
+            <p>Copyright (C) 2018 The Alley. All Rights Reserved.</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

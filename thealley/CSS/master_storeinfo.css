@@ -1,0 +1,84 @@
+/* master.css */
+
+@import url(header_style.css);
+@import url(map_style.css);
+
+body{
+    background: #2b3d41;
+    color: #fff;
+}
+a{color: #fff;}
+
+
+/* FC STYLE */
+#fc{margin: 0 auto;}
+@media screen and (min-width: 415px){
+#fc{width: 640px;} 
+}
+@media screen and (max-width: 414px){
+#fc{width: 320px;} 
+}
+    #fc >div{
+        margin: 0 auto;
+        margin-bottom: 20px;
+        background-color: rgba(0,0,0,0.3);
+    }
+    @media screen and (min-width: 415px){
+    #fc >div{width: 490px; height: 50px;}
+    }
+    @media screen and (max-width: 414px){
+    #fc >div{width: 320px;} 
+    }
+        #fc >div >h4{
+            line-height: 50px;
+            text-align: center;
+            background: url(../images/con_01.png) no-repeat;
+        }
+        @media screen and (min-width: 415px){
+        #fc >div >h4{
+            padding-left: 40px;
+            background-position: 45px 8px;
+        }
+        }
+        @media screen and (max-width: 414px){
+        #fc >div >h4{
+            font-size: 16px;
+            padding-left: 40px;
+            background-position: 25px 8px;
+        }
+        }
+    #fc >ul{
+        overflow: hidden;
+    }
+        #fc >ul >li{
+            background: url(../images/con_02.png) no-repeat;
+        }
+        @media screen and (min-width: 415px){
+        #fc >ul >li{
+            float: left;
+            width: 250px; height: 36px;
+            margin-bottom: 135px;
+            padding-left: 40px;
+        }
+        }
+        @media screen and (max-width: 414px){
+        #fc >ul >li{
+            width: 360px; height: 36px;
+            margin-bottom: 80px;
+            padding-left: 60px;
+            background-position: 25px 0;
+        }
+        #fc >ul >li:first-child{margin-bottom: 10px;}
+            #fc >ul >li >a{font-size: 14px;}
+        }
+        #fc >ul >li:first-child{
+            margin-right: 40px;
+        }
+            #fc >ul >li >a{
+                width: 240px;
+                line-height: 36px;
+                text-align: center;
+            }
+
+
+

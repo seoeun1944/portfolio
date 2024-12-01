@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ma:nyo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=2.0, user-scalable=yes" />
+    
+    <link rel="stylesheet" href="CSS/master_sub.css" />
+    <link rel="stylesheet" href="CSS/common.css" />
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/acodian_menu2.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,700,900&display=swap" rel="stylesheet">
+    
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="CSS/swiper.css">
+
+    <!-- Demo styles -->
+    <style>
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      width: 80%;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;*
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+    .swiper-slide:nth-child(2n) {
+      width: 80%;
+    }
+    .swiper-slide:nth-child(3n) {
+      width: 80%;
+    </style>
+    
+</head>
+<body>
+<input id="toggle" type="checkbox" />
+<div id="wrap">
+    <header id="main_header">
+        <h1 id="logo"><a href="main_page.html">man:yo</a></h1>
+        <label class="toggle" for="toggle"></label>
+    </header> 
+    <nav id="main_nav_wrap">
+        <div>
+            <header id="nav_header">
+                <h1 id="nav_logo"><a href="main_page.html">man:yo</a></h1>
+                <label class="toggle" for="toggle"></label>
+            </header>
+            <ul id="login">
+                <li><a href="#"><img src="images/btn_nav01.png" alt="로그인" /></a></li>
+                <li><a href="#"><img src="images/btn_nav02.png" alt="회원가입" /></a></li>
+                <li><a href="#"><img src="images/btn_nav03.png" alt="마이페이지" /></a></li>
+                <li><a href="#"><img src="images/btn_nav04.png" alt="상담" /></a></li>
+                <li><a href="#"><img src="images/btn_nav05.png" alt="장바구니" /></a></li>
+            </ul>
+            <ul id="main_nav">
+                <li>
+                    <h3><img src="images/nav_brand.png" alt="brand"/></h3>
+                    <ul class="sub">
+                        <li><a href="sub_page.html" style="color: #812e41; font-weight: 800;">마녀공장</a></li>
+                        <li><a href="#">자오담</a></li>
+                        <li><a href="#">60brix</a></li>
+                        <li><a href="#">100BON 향수</a></li>
+                        <li><a href="#">베네펫</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><img src="images/nav_shopping.png" alt="shopping"/></h3>
+                    <ul class="sub">
+                        <li><a href="#">브랜드별</a></li>
+                        <li><a href="#">테마별</a></li>
+                        <li><a href="#">카테고리</a></li>
+                        <li><a href="#">큐레이션</a></li>
+                        <li><a href="#">타입별</a></li>
+                        <li><a href="#">라인별 </a></li>
+                    </ul>
+                </li>
+                <li>
+                    <h3><img src="images/nav_event.png" alt="event"/></h3>
+                </li>
+                <li>
+                    <h3><img src="images/nav_review.png" alt="review"/></h3>
+                </li>
+                <li>
+                    <h3><img src="images/nav_lab.png" alt="ma:nyoLab"/></h3>
+                </li>
+            </ul> 
+        </div>
+        <label class="btn_close" for="toggle"></label>
+    </nav>
+</div>
+
+<section id="video">
+    <!--width="1195" height="672"--> 
+    <iframe width="100%" height="56.23%" src="https://www.youtube.com/embed/3V_jrL-jY3U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section>
+
+<section id="brand">
+    <h1 id="title">ma:nyo Brand</h1>
+    <div id="beauty">
+        <img src="images/img_beauty.png" alt="모델 손예진" />
+        <div>
+            <h2 class="sub_title">Beauty</h2>
+            <h3 class="sub_con">
+                공들여 포장하지 않아도 자연스러운 내 피부 <br />
+                그대로가 건강한 아름다움을 갖도록 <br />
+                마녀공장이 함께 하겠습니다
+            </h3>
+        </div>
+    </div>
+    <div id="healthy">
+        <img src="images/img_healthy.jpg" alt="허브잎 이미지" />
+        <div>
+            <h2 class="sub_title">Heahthy</h2>
+            <h3 class="sub_con">
+                건강한 아름다움을 위한 <br />
+                마녀공장의 원칙은<br />
+                엄선된 자연 원료만을 <br />
+                사용하는 것입니다<br /><br />
+
+                맛있는 열매는<br />
+                좋은 토양에서 나오듯,<br />
+                좋은 피부는 <br />
+                건강한 피부에서 <br />
+                시작됩니다
+            </h3>
+        </div>
+    </div>
+    <div id="honesty">
+        <img src="images/img_honesty.jpg" alt="텍스쳐 이미지" />
+        <div>
+            <h2 class="sub_title">Honesty</h2>
+            <h3 class="sub_con">
+                일상 속 수많은 고민거리,<br /> 
+                이제 피부 고민만큼은 <br />
+                하지 마세요<br /><br />
+
+                아무런 걱정없이 <br />
+                바를 수 있도록 <br />
+                정직하게 만들겠습니다
+            </h3>
+        </div>
+    </div>
+    <div id="life">
+        <img src="images/img_life.jpg" alt="Life Essentials" />
+        <div>
+            <h2 class="sub_title">Life Essentials</h2>
+            <h3 class="sub_con">
+                하루 아침에 일어나는 <br />
+                마법같은 기적이 아닌<br />
+                꾸준한 노력에서 <br />
+                나오는 건강한 피부<br /><br />
+
+                당신의 삶이 달라져도 <br />
+                놀라지 마세요<br />
+                일상의 휴식과 새로운 <br />
+                건강함을 전해드립니다
+            </h3>
+        </div>
+    </div>
+    <div id="none"> 
+        <img src="images/img_none.jpg" alt="무첨가" />
+        <div>
+            <h2 class="sub_title">
+                처음부터 지금까지<br />
+                걱정성분 <br />
+                無첨가 원칙
+            </h2>
+            <h3 class="sub_con">
+                피부에 꼭 필요한 <br />
+                성분을 담은 정직한 제품<br />
+                자극을 초래할 수 있는 <br />
+                각종 유해 성분으로부터<br />
+                걱정없이 안심하고 사용하세요
+            </h3>
+        </div>
+    </div>
+    <div id="skin">
+        <img src="images/img_skin.jpg" alt="모델 손예진" />
+        <div>
+            <h2 class="sub_title">
+                Healthy For<br />
+                Beautiful Skin
+            </h2>
+            <h3 class="sub_con">
+                꾸며 내지 않아도,<br />
+                자연스러움이 주는 피부 자신감<br />
+                피부 본연의 아름다움을 느껴보세요<br />
+                내일의 나를 더 건강하고 아름답게
+            </h3>
+            <h3 class="sub_end">
+                건강한 아름다움<br />
+                마녀공장
+            </h3>
+        </div>
+    </div>
+</section>
+
+<section id="award">
+    <h3 id="thanks">
+        <img src="images/thanks.jpg" alt="" />
+    </h3>
+    <div id="list">
+        <ul>
+            <li class="award_con">
+                <h3><img src="images/list_img01.jpg" alt=""/></h3>
+                <div>
+                    <p>2014</p>
+                    <h3>주목받는 유망상품</h3>
+                    <h4><strong>갈락토미세스 나이아신</strong></h4>
+                </div>
+            </li>
+            <li class="award_con">
+                <h3><img src="images/list_img02.jpg" alt=""/></h3>
+                <div>
+                    <p>2014 - 2019</p>
+                    <h3>주목받는 유망상품</h3>
+                    <h4>천연 화장품 부문 <strong>5년 연속대상</strong></h4>
+                </div>
+            </li>
+            <li class="award_con">
+                <h3><img src="images/list_img03.jpg" alt=""/></h3>
+                <div>
+                    <p>2014 - 2018</p>
+                    <h3>대한민국 올해의 히트상품</h3>
+                    <h4><strong>5년 연속 대상</strong></h4>
+                </div>
+            </li>
+            <li class="award_con">
+                <h3><img src="images/list_img04.jpg" alt=""/></h3>
+                <div>
+                    <p>2014 - 2018</p>
+                    <h3>소비자의 선택</h3>
+                    <h4>기능성/실용가치 부문 <br />
+                    <strong>5년 연속 대상</strong></h4>
+                </div>
+            </li>
+            <li class="award_con">
+                <h3><img src="images/list_img05.jpg" alt=""/></h3>
+                <div>
+                    <p>2015 - 2018</p>
+                    <h3>여성소비자가 뽑은 좋은 기업</h3>
+                    <h4><strong>4년 연속 대상 수상</strong></h4>
+                </div>
+            </li>
+            <li class="award_con">
+                <h3><img src="images/list_img06.jpg" alt=""/></h3>
+                <div>
+                    <p>2015 - 2018</p>
+                    <h3>올해의 히트(HIT)상품</h3>
+                    <h4><strong>4년 연속 수상</strong></h4>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div id="shopping">
+        <a href="#">shopping</a>
+    </div>
+</section>
+
+<footer>
+    <div id="m_footer">
+        <h1 id="f_logo">
+            <a href="#"><img src="images/f_logo.png" alt="ma:nyo로고"/></a>
+        </h1>
+        <ul id="policy">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+        </ul>
+    </div>
+    <div id="address">
+        <span>대표이사 김현수</span>
+        <span>서울특별시 강남구 봉은사로43길 18,2층,3층</span>
+        <span>사업자등록번호 108-86-00365 <a href="#">사업자번호조회&gt;</a></span>
+        <span>메일 mf855@naver.com | 팩스번호 02-6280-0829</span>
+        <span>호스팅제공 : 엔에이치앤고도(주)</span>
+        <span>COPYRIGHT &copy; MAYOFACTORY ALL RIGHTS RESERVED.</span>
+        <span>(주)이니시스의 구매안전(에스크로)에</span>
+        <span>가입하여 서비스를 제공하고 있습니다 <a href="#">가입확인&gt;</a></span>
+    </div>
+</footer>
+
+</body>
+</html>

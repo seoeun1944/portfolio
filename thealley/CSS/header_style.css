@@ -1,0 +1,519 @@
+/* header_style.css */
+header{}
+
+        .m_logo{
+            width: 43px; height: 31px;
+            text-indent: -6000px; overflow: hidden;
+            background: url(../images/m_logo.png) no-repeat;
+        }
+
+
+/** MAIN_MENU STYLE ************/
+@media screen and (min-width: 1367px){
+    
+/*TABLET MOBLIE*/
+#mt_menu{
+    display: none;
+}   
+    #main_menu{
+        width: 80px; height: 100%;
+        background: rgba(0,0,0,0.3);
+        
+        position: fixed;
+        right: 0;
+        
+        z-index: 80;
+    }
+        #main_menu >h1{
+            position: absolute;
+            top: 46px; left: 17px;
+        }
+        label.toggle_menu{
+            width: 19px; height: 35px;
+            text-indent: -6000px; overflow: hidden;
+            background: url(../images/toggle_pc.png) no-repeat center;
+            
+            position: absolute;
+            top: 297px; left: 31px;
+            
+            padding-top: 205px;
+            padding-bottom: 205px;
+        }
+        label.toggle_menu::after,
+        label.toggle_menu::before{
+            content: "";
+            display: block;
+            width: 1px; height: 184px;
+            background: rgba(255,255,255,0.5);
+            
+            position: absolute;
+            left: 9px;
+        }
+        label.toggle_menu::after{
+            top: 0;
+        }
+        label.toggle_menu::before{
+            bottom: 0;
+        }
+    
+        #quick_menu{
+            font-size: 12px;
+            
+            width: 65px;
+            position: absolute;
+            top: 156px; left: 7px;
+        }
+            #quick_menu >ul{}
+                #quick_menu >ul >li{
+                    text-align: center;
+                }
+                    #quick_menu >ul >li >a{
+                        color: #fff;
+                    }
+        
+        ul.sns{
+            height: 79px;
+            position: absolute;
+            bottom: 50px; left: 25px;
+        }
+            ul.sns >li{
+                width: 30px; height: 30px;
+                text-indent: -6000px; overflow: hidden;
+            }
+            ul.sns >li.facebook{
+                background: url(../images/btn_facebook.png) no-repeat;
+                margin-bottom: 19px;
+            }
+            ul.sns >li.instagram{
+                background: url(../images/btn_instagram.png) no-repeat;
+            }
+                ul.sns >li >a{
+                }
+}
+@media screen and (max-width: 1366px){
+/*PC*/
+#main_menu{
+    display: none;
+}
+    /*TABLET MOBLIE*/
+    #mt_menu{
+        display: block;
+        width: 100%; height: 80px;
+        position: fixed;
+        
+        z-index: 80;
+    }
+        #mt_menu >h1{
+            position: absolute;
+            left: 3.5%; top: 23px;
+        }
+        #mt_menu >label.toggle_menu{
+            width: 35px; height: 19px;
+            text-indent: -6000px; overflow: hidden;
+            background: url(../images/toggle_tm.png) no-repeat center right;
+            
+            position: absolute;
+            right: 3.5%; top: 29px;
+            
+            padding-left: 50%;
+        }
+        #mt_menu >label.toggle_menu::before{
+            content: "";
+            display: block;
+            width: 80%; height: 1px;
+            background: rgba(255,255,255,0.5); 
+            text-align: center;
+            
+            position: absolute;
+            left: 0; top: 10px;
+            
+        }
+        #quick_menu2{
+            height: 27px;
+            position: absolute;
+            left: 100px; top: 26px;
+        }
+            #quick_menu2 >ul{
+                overflow: hidden;
+            }
+                #quick_menu2 >ul >li{
+                    float: left;
+                    margin-right: 26px;
+                }
+                    #quick_menu2 >ul >li >a{
+                        font-size: 12px;
+                        color: #fff;
+                    }
+
+}
+        /* MOBLIE */
+        @media screen and (max-width: 767px){
+        #mt_menu >label.toggle_menu::before{
+            display: none;
+        }
+        #quick_menu2{
+            height: 27px;
+            position: absolute;
+            left: 83px; top: 26px;
+        }
+                #quick_menu2 >ul >li{
+                            float: left;
+                            margin-right: 15px;
+                        }
+                        #quick_menu2 >ul >li >a{
+                            font-size: 11px;
+                            color: #fff;
+                        }
+        }
+
+/** TOGGLE NAV STYLE ************/
+#main_nav{
+    width: 100%;
+    position: fixed;
+    right: -100%; top: 0; bottom: 0;
+    display: none;
+    
+    z-index: 100;
+}
+input#toggle_menu:checked + #main_nav{
+    right: 0;
+    display: block;
+    transition-delay: 0.5s;
+    transition-duration: 0.3s;
+}
+
+    #main_nav >div{
+        position: absolute;
+        right: 0;
+
+        z-index: 115;
+    }
+    @media screen and (min-width: 1367px){
+    #main_nav >div{width: 80px;}
+    }
+    @media screen and (max-width: 1366px){
+    #main_nav >div{width: 100%; height: 80px;}
+    }
+
+        #nav_logo{
+            width: 43px; height: 31px;
+            text-indent: -6000px; overflow: hidden;
+            background: url(../images/nav_m_logo.png) no-repeat;
+
+            position: absolute;
+        }
+        @media screen and (min-width: 1367px){
+        #nav_logo{top: 46px; left: 17px;}
+        }
+        @media screen and (max-width: 1366px){
+        #nav_logo{top: 23px; left: 3.5%; position: fixed;}
+        }
+
+        label.btn_close{
+            text-indent: -6000px; overflow: hidden;
+            position: absolute;
+        }
+        @media screen and (min-width: 1367px){
+        label.btn_close{
+            width: 19px; height: 35px;
+            background: url(../images/btn_close.png) no-repeat center;
+            top: 297px; left: 31px;
+
+            padding-top: 205px;
+            padding-bottom: 205px;
+        }
+        }
+        @media screen and (max-width: 1366px){
+        label.btn_close{
+            width: 35px; height: 19px;
+            background: url(../images/btn_close_tm.png) no-repeat center;
+            top: 30px; right: 3.5%;
+            position: fixed;
+        }
+        }
+        label.btn_close::after,
+        label.btn_close::before{
+            content: "";
+            display: block;
+            width: 1px; height: 184px;
+            background: rgba(43,61,65,0.5);
+
+            position: absolute;
+            left: 9px;
+        }
+        label.btn_close::after{
+            top: 0;
+        }
+        label.btn_close::before{
+            bottom: 0;
+        }
+
+        #nav_quick_menu{
+            font-size: 12px;
+
+            width: 65px;
+            position: absolute;
+            top: 156px; left: 7px;
+        }
+            #nav_quick_menu >ul{}
+                #nav_quick_menu >ul >li{
+                    text-align: center;
+                }
+                    #nav_quick_menu >ul >li >a{
+                        color: #2b3d41;
+                    }
+
+        .nav_sns{
+            position: absolute;
+        }
+                .nav_sns >li >a >img{
+                    width: 30px; height: 30px;
+                }
+        @media screen and (min-width: 1367px){
+        .nav_sns{
+            height: 79px;
+            top: 808px; left: 25px;
+        }
+            .nav_sns >li.facebook{
+                margin-bottom: 19px;
+            }
+        }
+        @media screen and (max-width: 1366px){
+        .nav_sns{
+            width: 110px;
+            top: 80px; right: 3.5%;
+            
+            position: fixed;
+        }
+            .nav_sns >li{
+                float: left;
+                overflow: hidden;
+            }
+            .nav_sns >li.facebook{
+                margin-bottom: 0;
+                margin-right: 20px;
+            }
+        }
+
+        @media screen and (max-width: 1366px){
+        label.btn_close::after,
+        label.btn_close::before,
+        #nav_quick_menu{
+            display: none;
+        }
+        }
+
+    .nav_menu{
+        width: 380px; height: 100%;
+        background: #c9bc9c;
+        position: absolute;
+        top: 0; right: 0; bottom: 0;
+        padding-top: 400px;
+
+        z-index: 110;
+    }
+    @media screen and (max-width: 1366px){
+    .nav_menu{
+        width: 100%;
+        padding-top: 200px;
+        position: fixed;
+    }
+    }
+        .nav_menu >li{
+            height: 60px;
+            line-height: 60px;
+        }
+            .nav_menu >li >a{
+                color: #2b3d41;
+                text-align: center;
+            }
+
+    #main_nav >.menu_bg{
+        width: 100%;
+        position: fixed;
+        right: -100%; top: 0; bottom: 0;
+        background: rgba(0,0,0,0.5);
+
+        z-index: 105;
+        opacity: 0;
+    }
+    input#toggle_menu:checked + #main_nav >.menu_bg{
+        right: 0;
+        opacity: 1;
+        transition-property: opacity;
+        transition-duration: 0.5s;
+    }
+
+/** MAIN_MENU2 STYLE *******************/
+#sub_header{
+    height: 500px;
+    position: relative;
+    
+    z-index: 999;
+}
+@media screen and (min-width: 1367px){
+#sub_header{height: 500px;}
+}
+@media screen and (min-width: 768px) and (max-width: 1366px){
+#sub_header{height: 480px;}
+}
+@media screen and (max-width: 767px){
+#sub_header{height: 468px;}
+}
+    #sub_header >#s_logo{
+        width: 369px; height: 359px;
+        text-indent: -6000px; overflow: hidden;
+        background: url(../images/s_logo.png) no-repeat;
+
+        position: absolute;
+        top: 40px; left: 50%;
+        margin-left: -184px;
+    }
+    @media screen and (max-width: 767px){
+    #sub_header >#s_logo{
+        top: 100px;
+    }
+    }
+
+    ul.menu{
+        position: absolute;
+        top: 400px; left: 50%;
+        
+        z-index: 999;
+    }
+    @media screen and (max-width: 767px){
+    ul.menu{
+        top: 100%; 
+    }
+    }
+        ul.menu >li{
+            float: left;
+            overflow: hidden;
+        }
+        ul.menu >li:last-child{
+            padding-right: 0;
+        }
+            ul.menu >li >a{
+                color: #fff;
+            }
+    @media screen and (min-width: 768px){
+    ul.menu{
+        width: 465px;
+        margin-left: -232px;
+    }
+        ul.menu >li{
+            padding-right: 65px;
+        }
+    }
+    @media screen and (max-width: 767px){
+    ul.menu{
+        width: 320px;
+        margin-left: -160px;
+    }
+        ul.menu >li{
+            padding-right: 0;
+            padding-left: 6%;
+        }
+            ul.menu >li >a{
+                font-size: 15px;
+            }
+    }
+
+
+/** VIDEO STYLE **************/
+#video{
+    position: absolute;
+    left: 0; top: 0;
+}
+    video{
+        width: 100%;
+        position: absolute;
+        left: 0; top: 0;
+        z-index: -100;
+    }
+@media screen and (min-width: 1367px){
+#video{width: 100%;}
+}
+@media screen and (min-width: 768px) and (max-width: 1366px){
+#video{width: 120%;}
+}
+@media screen and (max-width: 767px){
+#video{width: 320%;}
+}
+
+
+/** BANNER STYLE ***********/
+        #banner >#slider >img{
+            float: left;
+        }
+@media screen and (min-width: 768px){
+#banner{
+    width: 100%;
+}
+    #banner >#slider{
+        margin: 0 auto;
+        overflow: hidden;
+    }
+}
+    @media screen and (min-width: 1367px){
+    #banner >#slider{
+        width: 1450px;
+    }
+        #banner >#slider >img{
+            width: 462px;
+        }
+        #banner >#slider >img:first-child{
+            padding-left: 50px;
+        }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1366px){
+    #banner >#slider{
+        width: 80%;
+    }
+        #banner >#slider >img{
+            width: 32.58%;
+        }
+        #banner >#slider >img:first-child{
+            padding-left: 2.25%;
+        }
+    }
+
+@media screen and (min-width: 768px){
+    #banner{
+        display: block;
+    }
+    #m_banner{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    #banner{
+        display: none;
+    }
+    #m_banner{
+        width: 100%;
+        display: block;
+        margin-bottom: 50px;
+        position: absolute;
+        z-index: 50;
+    }
+        #m_banner img{
+            width: 80%;
+            margin: 15% auto 10%;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

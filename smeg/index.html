@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<title>smeg</title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage methods demo." />
+	<meta name="keywords"  content="fullpage,jquery,methods,callbacks,demo" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="CSS/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="CSS/examples.css" />
+	
+    <link rel="stylesheet" href="CSS/master.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<style>
+		#actions{
+			position:fixed;
+			top: 10px;
+			left: 20px;
+			z-index: 99999;
+            
+            height: 32px;
+		}
+		#actions a{
+			padding: 7px;
+			margin: 2px;
+			color: #ccc;
+			display: inline-block;
+            font-size: 14px;
+		}
+		#actions a:hover{
+			color: #fff;
+		}
+    
+	</style>
+
+</head>
+<body>
+
+<div id="actions">
+    <a href="index.html"><img src="images/white-smeg-logo.png" alt="스메그로고"/></a>
+	<a href="#">COMPANY</a>
+	<a href="#">NOTICE</a>
+	<a href="#">EVENT</a>
+	<a href="#">SMEGazine</a>
+	<a href="#">STORE</a>
+</div>
+
+<!--
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">First slide</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+</ul>
+-->
+
+<div id="myContainer">
+
+	<div class="section" id="section0">
+		<div class="slide" id ="slide1.1">
+            <div id="first_page">
+                <h1><img src="images/coffee.png" alt="커피머신 커피" />
+                </h1>
+                <div id="coffee_drip">
+                    <div>
+                        <img src="images/coffee_drip.png" alt="드립 커피머신" />
+                        <span>dcf02rdeu</span>
+                    </div>
+                </div>
+                <div id="coffee_auto">
+                    <div>
+                        <img src="images/coffee_auto.png" alt="반자동 커피머신"/>
+                        <span>ecf01bl</span>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<div class="slide" id="slide1.2">
+		<div id="second_page">
+		    <h1><img src="images/fab.png" alt="새로운 FAB 시리즈 출시" /></h1>
+		    <div id="fab_wrap">
+                <div>
+                    <img src="images/fab5.jpg" alt="fab5모델 이미지"/>
+                    <span>fab5rpb3</span>
+                </div>
+		        <div>
+                    <img src="images/fab10.jpg" alt="fab10모델 이미지"/>
+                    <span>fab10rcr2</span>
+		        </div>
+		        <div>
+		        <img src="images/fab30.jpg" alt="fab30모델 이미지"/>
+		        <span>fab30ror3</span>
+		        </div>
+		    </div>
+		    
+		    <img id="fab_bigimg" src="images/fab_bigimg.jpg" alt="인테리어 이미지" />
+		</div>
+		</div>
+		<div class="slide" id="slide1.3">
+		    <div id="third_page">
+		        <h1><img src="images/dgsmeg.png" alt="돌체앤가바나 스메그" /></h1>
+		        <div id="dg_wrap">
+                    <img src="images/dgsmeg_product.jpg" alt="돌체앤가바나 콜라보 제품이미지" />
+                    <span id="presses">cjf01dg</span>
+                    <span id="toaste">tsf01dg</span>
+                    <span id="pot">klf03dg</span>
+		        </div>
+
+		    </div>
+		</div>
+    </div>
+		
+	<div class="section" id="section1">
+		<div class="slide">
+            <h1><img src="images/news.png" alt="스메그 뉴스" /></h1>
+            <div class="news_wrap">
+                <div>
+                    <img class="news_pt" src="images/news_img01.jpg" alt="스메그 제품 이미지" />
+                    <img class="news_m" src="images/news_img01_m.jpg" alt="스메그 제품 이미지" />
+                    <div class="info">
+                        <h3>NEWS.</h3>
+                        <span>스메그 멤버쉽 해택<br />
+                        일부변경</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="news_pt" src="images/news_img02.jpg" alt="스메그 제품 이미지" />
+                    <img class="news_m" src="images/news_img02_m.jpg" alt="스메그 제품 이미지" />
+                    <div class="info">
+                        <h3>NOTICE.</h3>
+                        <span>롯데하이마트<br />
+                        잠실점 OPEN</span>
+                    </div>
+                </div>
+                <div>
+                    <img class="news_pt" src="images/news_img03.jpg" alt="스메그 제품 이미지" />
+                    <img class="news_m" src="images/news_img03_m.jpg" alt="스메그 제품 이미지" />
+                    <div class="info">
+                        <h3>EVENT.</h3>
+                        <span>스메그스토어 삼성만의<br />
+                        특별한 혜택</span>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+	
+	<div class="section" id="section2">
+        <h1><img src="images/smegazine.png" alt="스메거진" /></h1>
+        <div id="smegazine_wrap">
+            <div><a href="#">
+                <img src="images/smegazine_img01.jpg" alt="스메그, 당신의 일상에 녹아들다 랜선 집들이" />
+                <div class="title">
+                    <h3>스메그, 당신의 일상에 녹아들다 랜선 집들이 with SMEG</h3>
+                    <span></span>
+                </div>
+            </a></div>
+            <div><a href="#">
+                <img src="images/smegazine_img02.jpg" alt="[Appliance] SMF02 완벽 정리" />
+                <div class="title">
+                    <h3>[Appliance] SMF02 완벽 정리</h3>
+                    <span></span>
+                </div>
+            </a></div>
+            <div><a href="#">
+                <img src="images/smegazine_img03.jpg" alt="[SMEG Recipe] 입으로 한 번, 눈으로 두 번 먹는 라즈베리 블랑" />
+                <div class="title">
+                    <h3>[SMEG Recipe] 입으로 한 번, 눈으로 두 번 먹는 라즈베리 블랑</h3>
+                    <span></span>
+                </div>
+            </a></div>
+            <div><a href="#">
+                <img src="images/smegazine_img04.jpg" alt="[Appliance] 터치할 필요 없는 COOL한 인덕션" />
+                <div class="title">
+                    <h3>[Appliance] 터치할 필요 없는 COOL한 인덕션</h3>
+                    <span></span>
+                </div>
+            </a></div>
+            <div><a href="#">
+                <img src="images/smegazine_img05.jpg" alt="#스메그_공식카페 #정보공유" />
+                <div class="title_sns">
+                    <h3>#스메그_공식카페 #정보공유</h3>
+                    <span></span>
+                </div>
+            </a></div>
+            <div><a href="#">
+                <img src="images/smegazine_img06.jpg" alt="[The-edit] 냉장고를 부탁해, 스메그" />
+                <div class="title_sns">
+                    <h3>[The-edit] 냉장고를 부탁해, 스메그</h3>
+                    <span></span>
+                </div>
+            </a></div>
+            <div><a href="#">
+                <img src="images/smegazine_img07.jpg" alt="#찰떡궁합 #플렌테리어" />
+                <div class="title_sns">
+                    <h3>#찰떡궁합 #플렌테리어</h3>
+                    <span></span>
+                </div>
+            </a></div>
+            <div><a href="#">
+                <img src="images/smegazine_img08.jpg" alt="#블렌더_미니_레시피" />
+                <div class="title_sns">
+                    <h3>#블렌더_미니_레시피</h3>
+                    <span></span>
+                </div>
+            </a></div>
+        </div>
+	</div>
+	
+	<div class="section" id="section3">
+        <div id="smegclass_wrap">
+            <div id="video_wrap">
+                <iframe src="https://www.youtube.com/embed/WEfaCJSy6Rs?autoplay=1&loop=1&playlist=WEfaCJSy6Rs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="intro">
+                <h1><img src="images/smegclass.png" alt="원데이 스메그 클래스" /></h1>
+                <h3>프로페셔널 오븐을 사용해 배워보는 전문적인 베이킹 클래스가 궁금하다면?<br />
+                지금 바로 스메그코리아 원데이 클래스에 참여해보세요.</h3>
+            </div>
+        </div>
+        
+        <div id="footer">
+            <ul id="policy">
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">협찬/제휴문의</a></li>
+                <li><a href="#">매장안내</a></li>
+                <li><a href="#">스메그패밀리</a></li>
+                <li><a href="#">스메그리퍼브샵</a></li>
+            </ul>
+            
+            <div id="logo">
+                <a href="index.html"><h1>logo</h1></a>
+
+                <ul id="sns">
+                    <li><a href="#"><img src="images/sns_cafe.png" alt="네이버카페 로고" /></a></li>
+                    <li><a href="#"><img src="images/sns_blog.png" alt="네이버블로그 로고" /></a></li>
+                    <li><a href="#"><img src="images/sns_facebook.png" alt="페이스북 로고" /></a></li>
+                    <li><a href="#"><img src="images/sns_insta.png" alt="인스타그램 로고" /></a></li>
+                </ul>
+            </div>
+            
+            <div id="address">
+                <div id="address_wrap">
+                    <span>상호명 : (주)제이컬렉션대표 : 정태호주소 : 서울특별시 강남구 봉은사로 449(삼성동44-17) 밤부타워 2,3,4,5층</span>
+                    <span>개인정보보호책임자 : 이한범사업자등록번호 : 206-86-72765통신판매신고번호 : 제 2018-서울강남-04317호</span>
+                    <span>대표메일 : smeginfo@smegkorea.com</span>
+                    <span class="copyright" >Copyright ⓒ 2017 SMEGKOREA Co., Ltd. All right reserved.</span>
+                </div>
+                
+                <div id="support">
+                    <span>고객지원</span>
+                    <h1>1588-2644</h1>
+                    <h4>평일 09:00 ~ 17:00 (주말/공휴일 제외)</h4>
+                    <h3>1:1 문의자주 묻는 질문</h3>
+                </div>
+            </div>
+            
+        </div>
+	</div>
+</div>
+
+
+
+<script type="text/javascript" src="js/fullpage.js"></script>
+<script type="text/javascript" src="js/examples.js"></script>
+<script type="text/javascript">
+	function initialization(){
+		var myFullpage = new fullpage('#myContainer', {
+			sectionsColor: ['#000', '#000', '#000', 'black', '#000'],
+			anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+			resize: false,
+			animateAnchor:false,
+			scrollOverflow: true,
+			autoScrolling:true,
+			responsive: 900,
+			fitSection: false,
+			menu: '#menu',
+			navigation:true,
+			continuousVertical:true,
+			paddingTop: '20px'
+		});
+	}
+
+	//fullPage.js initialization
+	initialization();
+
+
+	document.querySelector('#moveSectionUp').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.moveSectionUp();
+	});
+
+	document.querySelector('#moveSectionDown').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.moveSectionDown();
+	});
+
+	document.querySelector('#moveTo').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.moveTo(2, 3);
+	});
+
+	document.querySelector('#silentMoveTo').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.silentMoveTo(2);
+	});
+
+	document.querySelector('#silentMoveToSlide').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.silentMoveTo(2, 3);
+	});
+
+	document.querySelector('#moveSlideRight').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.moveSlideRight();
+	});
+
+	document.querySelector('#moveSlideLeft').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.moveSlideLeft();
+	});
+
+	document.querySelector('#setAutoScrollingFalse').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.setAutoScrolling(false);
+	});
+
+	document.querySelector('#setAutoScrollingTrue').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.setAutoScrolling(true);
+	});
+
+	document.querySelector('#setAllowScrollingFalse').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.setAllowScrolling(false);
+	});
+
+	document.querySelector('#setAllowScrollingTrue').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.setAllowScrolling(true);
+	});
+
+	document.querySelector('#setKeyboardScrollingFalse').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.setKeyboardScrolling(false);
+	});
+
+	document.querySelector('#setKeyboardScrollingTrue').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.setKeyboardScrolling(true);
+	});
+
+	document.querySelector('#setScrollingSpeed1500').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.setScrollingSpeed(2500);
+	});
+
+	document.querySelector('#setScrollingSpeed700').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.setScrollingSpeed(700);
+	});
+
+	document.querySelector('#destroy').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.destroy('all');
+	});
+
+	document.querySelector('#undestroy').addEventListener('click', function(e){
+		e.preventDefault();
+
+		//fullPage.js initialization
+		initialization();
+	});
+
+	document.querySelector('#reBuild').addEventListener('click', function(e){
+		e.preventDefault();
+		fullpage_api.reBuild();
+	});
+
+	document.querySelector('#setLockAnchorsTrue').addEventListener('click', function(e){
+		e.preventDefault;
+		fullpage_api.setLockAnchors(true);
+	});
+
+	document.querySelector('#setLockAnchorsFalse').addEventListener('click', function(e){
+		e.preventDefault;
+		fullpage_api.setLockAnchors(false);
+	});
+</script>
+
+</body>
+</html>

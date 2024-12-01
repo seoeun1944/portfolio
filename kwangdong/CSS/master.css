@@ -1,0 +1,23 @@
+/* master.css */
+
+@import url(header_style_pc.css) screen and (min-width: 1367px);
+@import url(header_style_mobile.css) screen and (max-width: 1366px);
+@import url(section.css);
+@import url(footer.css);
+
+
+
+
+#video{
+    width: 100%; padding-top: 56.2%;
+    position: relative;
+}
+#video >iframe{
+    position: absolute;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+}
+@media screen and (max-width: 1366px){
+#video{margin-bottom: 100px;} 
+#video >iframe{top: 80px;}
+}

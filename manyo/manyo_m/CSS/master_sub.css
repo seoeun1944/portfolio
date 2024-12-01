@@ -1,0 +1,171 @@
+/* master_sub.css */
+
+@import url("header.css");
+@import url("footer.css");
+
+body{
+    width: 100%;
+}
+#wrap{
+    width: 100%;
+}
+
+/** VIDEO STYLE *******************************/
+section#video{
+    padding-top: 20px;
+}
+    #video >iframe{}
+
+/** BRAND STYLE *******************************/
+
+/** 중복 style_font **/
+.sub_title{
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 36px;
+}
+.sub_con{
+    color: #999;
+}
+
+
+
+#brand{
+    padding: 60px 15px 0;
+    position: relative;
+}
+    #title{
+        width: 114px; height: 43px;
+        background: url(../images/brand_title.png);
+        text-indent: -6000px; overflow: hidden;
+        
+        position: absolute;
+        left: 50%;
+        margin-left: -57px;
+    }
+    /** BEAUTY **/
+    #beauty{
+        padding: 63px 0 30px;
+        position: relative;
+    }
+        #beauty >img{
+            width: 61.34%;
+            padding-left: 50%; margin-left: -30.67%;
+        }
+        #beauty >div{
+            width: 300px;
+            position: absolute;
+            left: 50%; bottom: 48px;
+            margin-left: -130px;
+        }
+
+    /** HEALTHY **/
+    #healthy{
+        position: relative;
+        background: #ececea;
+        
+        padding-bottom: 30px;
+    }
+        #healthy >img{
+            width: 100%;
+            float: left;
+            padding: 18px 0;
+            background: #ececea;
+        }
+        #healthy >div{
+            float: left;
+            position: absolute;
+            left: 50%;
+        }
+
+    /** HONESTY **/
+    #honesty{
+        float: left;
+        width: 48%;
+        padding-top: 30px;
+    }
+    #honesty >img{
+        width: 100%;
+    }
+    /** LIFE **/
+    #life{
+        float: right;
+        width: 48%;
+        padding-top: 30px;
+    }
+    #life >img{
+        width: 100%;
+    }
+
+    /** NONE **/
+    #none{
+    }
+        #none >img{
+            width: 46.86%;
+            float: left;
+            padding-top: 80px;
+        }
+        #none >div{
+            float: right;
+            padding-top: 30px;
+        }
+            #none h3{
+                text-align: center;
+            }
+
+    /** SKIN **/
+    #skin{
+    }    
+    #skin >img{
+        width: 100%;
+        padding-top: 30px;
+    }
+    #skin >div{
+        width: 200px;
+        padding-left: 50%;
+        margin-left: -100px;
+    }
+        #skin h2,        
+        #skin h3{
+            text-align: center;
+        }
+        #skin h3.sub_end{
+            padding-top: 10px;
+            font-weight: 600;
+        }
+
+/** AWARD STYLE *******************************/
+
+#award{
+    padding-top: 60px;
+}
+    #thanks{}
+        #thanks >img{
+            width: 100%;
+        }
+
+    #list{}
+        #list >ul{}
+            .award_con{}
+                .award_con >h3{
+                    float: left;
+                }
+                    .award_con >h3 >img{
+                        margin-left: -10px;
+                    }
+                .award_con >div{
+                    
+                }
+
+
+
+
+
+
+
+
+
+
+
+
+

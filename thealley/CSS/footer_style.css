@@ -1,0 +1,28 @@
+/* footer_style.css */
+
+#footer{
+    width: 100%;
+    background: #2b3d41;
+    color: #b7c8cc;
+}
+@media screen and (min-width: 768px){
+#footer{padding: 107px 0 220px 68px;}
+}
+@media screen and (max-width: 767px){
+#footer{padding: 60px 0 180px 25px;}
+}
+    #f_logo{
+        width: 43px; height: 31px;
+        text-indent: -6000px; overflow: hidden;
+        background: url(../images/f_logo.png);
+        margin-bottom: 50px;
+    }
+    .address{
+        font-size: 13px;
+        line-height: 27px;
+    }
+    @media screen and (max-width: 767px){
+    .address{width: 90%;}
+    }
+        .address >p{}
+        .address >p >a{color: #b7c8cc;}
